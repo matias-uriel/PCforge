@@ -1,0 +1,629 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+div.nav1 {
+  background-color: #2f8cf0;
+  font-family: "montserrat", sans-serif;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 60px;
+}
+div.nav1 div.navtop {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  padding-inline: 60px;
+}
+
+div.nav2 {
+  display: flex;
+  font-family: "montserrat", sans-serif;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #232222;
+  color: white;
+  padding-inline: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+div.nav2 ul {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  gap: 70px;
+}
+div.nav2 ul li {
+  list-style: none;
+}
+div.nav2 ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
+}
+div.nav2 a:hover {
+  color: #2f8cf0;
+  transition: all 0.5s;
+}
+
+section.footer_1 {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #232222;
+  color: white;
+  font-family: "montserrat", sans-serif;
+  height: 170px;
+}
+section.footer_1 h1 {
+  padding-bottom: 10px;
+  font-weight: 400;
+}
+section.footer_1 p {
+  padding-left: 3px;
+}
+section.footer_1 ul {
+  font-weight: 300;
+  padding-left: 3px;
+}
+section.footer_1 ul li {
+  list-style: none;
+  padding-bottom: 5px;
+}
+section.footer_1 ul li a {
+  text-decoration: none;
+  color: white;
+}
+section.footer_1 a:hover {
+  color: #2f8cf0;
+  transition: all 0.5s;
+}
+
+section.footer_2 {
+  font-family: "montserrat", sans-serif;
+  display: flex;
+  width: 100%;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  background-color: #2f8cf0;
+  color: white;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+section.footer_2 h1 {
+  padding-right: 80px;
+}
+section.footer_2 div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+section.footer_2 div h2 {
+  font-weight: 500;
+  font-size: 18px;
+  margin: auto;
+  padding-bottom: 10px;
+}
+section.footer_2 div p {
+  font-weight: 400;
+  max-width: 700px;
+}
+
+section.footer_3 {
+  background-color: #232222;
+  font-family: "montserrat", sans-serif;
+  font-weight: 300;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  background-color: rgb(243, 243, 243);
+}
+
+hr {
+  display: flex;
+  margin: auto;
+  width: 50%;
+}
+
+section.portada ul {
+  font-family: "montserrat", sans-serif;
+  border: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: auto;
+  padding-inline: 300px;
+}
+section.portada ul li {
+  display: flex;
+  border: solid 1px;
+  list-style: none;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+}
+section.portada ul li a {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.405);
+  height: 100%;
+  width: 100%;
+}
+section.portada ul a:hover {
+  background-color: initial;
+  color: #2f8cf0;
+  transition: all 0.6s;
+}
+section.portada ul li:nth-child(1) {
+  background-image: url("https://img.freepik.com/foto-gratis/tecnico-reparacion-computadora-hardware-computadora-reparacion-actualizacion-tecnologia_1150-8861.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+section.portada ul li:nth-child(2) {
+  background-image: url("https://thumbs.dreamstime.com/b/computer-macro-technician-engineer-service-electronic-hardware-repair-technology-maintenance-pc-man-186603043.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+section.portada ul li:nth-child(3) {
+  background-image: url("https://consorcio.modyocdn.com/uploads/aaa50175-2d27-432f-b293-73cb9caa2345/C1140x550/GettyImages-815174828.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+section.portada ul li:nth-child(4) {
+  background-image: url("https://img.freepik.com/fotos-premium/hombre-empleado-telemercadeo-centro-llamadas-auriculares-escritorio-trabajador-o-consultor-mesa-computadora-hablando-cliente-revisando-informacion-o-consultando-al-cliente-soporte-tecnico_590464-87084.jpg?w=2000");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+section.portada ul li:hover:nth-child(1) {
+  border-color: #2f8cf0;
+}
+section.portada ul li:hover:nth-child(2) {
+  border-color: #2f8cf0;
+}
+section.portada ul li:hover:nth-child(3) {
+  border-color: #2f8cf0;
+}
+section.portada ul li:hover:nth-child(4) {
+  border-color: #2f8cf0;
+}
+
+section.index_1 {
+  font-family: "montserrat", sans-serif;
+  background-color: #2f8cf0;
+  height: 370px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section.index_1 div {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding-top: 70px;
+  padding-bottom: 60px;
+  width: 1000px;
+  border: solid 1px black;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+section.index_1 div h1 {
+  font-size: 30px;
+}
+section.index_1 div h2 {
+  font-weight: 500;
+  color: #2f8cf0;
+}
+section.index_1 div p {
+  font-weight: 400;
+}
+section.index_1 div p span {
+  color: #2f8cf0;
+  font-weight: 700;
+}
+section.index_1 div a {
+  background-color: #2f8cf0;
+  margin-top: 15px;
+  padding: 15px;
+  text-decoration: none;
+  color: white;
+  border-radius: 3px;
+}
+section.index_1 a:hover {
+  color: black;
+  transition: all 0.5s;
+}
+
+section.index_2 {
+  font-family: "montserrat", sans-serif;
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 150px;
+}
+section.index_2 div {
+  display: flex;
+  flex-direction: column;
+}
+section.index_2 div h1 {
+  margin: auto;
+  font-size: 40px;
+  color: #2f8cf0;
+}
+section.index_2 div p {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+section.index_3 {
+  font-family: "montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex: 1;
+  padding-bottom: 60px;
+}
+section.index_3 h1 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+section.index_3 div.container {
+  display: flex;
+  gap: 20px;
+}
+section.index_3 div.container div {
+  border: solid 1px;
+  width: 300px;
+  height: 420px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+section.index_3 div.container div h1 .bronce {
+  color: #CD7F32;
+}
+section.index_3 div.container div h1 .plata {
+  color: #C0C0C0;
+}
+section.index_3 div.container div h1 .oro {
+  color: #D4AF37;
+}
+section.index_3 div.container div h2 {
+  font-weight: 700;
+}
+section.index_3 div.container div h2 span {
+  color: #2f8cf0;
+}
+section.index_3 div.container div ul li {
+  padding-bottom: 5px;
+  font-weight: 500;
+}
+section.index_3 div.container div a {
+  background-color: #2f8cf0;
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  border-radius: 3px;
+}
+section.index_3 div.container a:hover {
+  color: black;
+  transition: all 0.6s;
+}
+
+section.index_4 {
+  font-family: "montserrat", sans-serif;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 600px;
+  background-image: url("https://www.escuelamapa.edu.uy/wp-content/uploads/2016/06/REPARACIONPC.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+section.index_4 div.empresa {
+  background-color: rgba(0, 0, 0, 0.6078431373);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  width: 600px;
+  border-radius: 10px;
+}
+section.index_4 div.empresa h1 {
+  padding-bottom: 10px;
+}
+section.index_4 div.empresa h2 {
+  font-size: 15px;
+  font-weight: 500;
+  color: #2f8cf0;
+  padding-bottom: 10px;
+}
+section.index_4 div.empresa p {
+  text-align: center;
+}
+section.index_4 div.empresa a {
+  background-color: #2f8cf0;
+  text-decoration: none;
+  color: white;
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 4px;
+}
+section.index_4 div.empresa a:hover {
+  color: black;
+  transition: all 0.6s;
+}
+section.index_4 div.forma {
+  background-color: rgba(0, 0, 0, 0.6078431373);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  width: 600px;
+  border-radius: 10px;
+}
+section.index_4 div.forma h1 {
+  padding-bottom: 10px;
+}
+section.index_4 div.forma p {
+  text-align: center;
+}
+section.index_4 div.forma a {
+  background-color: #2f8cf0;
+  text-decoration: none;
+  color: white;
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 4px;
+}
+section.index_4 div.forma a:hover {
+  color: black;
+  transition: all 0.6s;
+}
+
+section.contrato_1 {
+  font-family: "montserrat", sans-serif;
+  background-image: url("https://soportepc.com.ar/images/banner.jpg");
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+section.contrato_1 div {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  width: 50%;
+  align-items: flex-start;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: 240px;
+  color: white;
+  text-align: start;
+  gap: 15px;
+}
+section.contrato_1 div p {
+  padding: 10px;
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0.862745098);
+  border-radius: 5px;
+}
+section.contrato_1 div h1 {
+  padding: 10px;
+  font-size: 37px;
+  color: #2f8cf0;
+  background-color: rgba(0, 0, 0, 0.862745098);
+  border-radius: 5px;
+}
+section.contrato_1 div a {
+  background-color: #2f8cf0;
+  text-decoration: none;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+}
+section.contrato_1 div a:hover {
+  color: black;
+  transition: all 0.6s;
+}
+
+section.contrato_2 {
+  font-family: "montserrat", sans-serif;
+  padding-inline: 30px;
+}
+section.contrato_2 div.container {
+  display: grid;
+  height: 500px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin: auto;
+  border: solid 1.5px #2f8cf0;
+}
+section.contrato_2 div.container div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section.contrato_2 div.container div h2 {
+  color: #2f8cf0;
+  padding-bottom: 10px;
+  font-size: 30px;
+}
+section.contrato_2 div.container div p {
+  text-align: center;
+  min-width: 60px;
+  max-width: 500px;
+}
+section.contrato_2 h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+section.contrato_3 {
+  font-family: "montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section.contrato_3 h1 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+section.contrato_3 h2 {
+  padding-top: 20px;
+  font-weight: 500;
+  font-size: 20px;
+  color: #2f8cf0;
+}
+section.contrato_3 p {
+  font-weight: 400;
+}
+section.contrato_3 p span {
+  color: #2f8cf0;
+  font-weight: 700;
+}
+
+section.formateo_1 {
+  font-family: "montserrat", sans-serif;
+  background-image: url("https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2021/05/como-ajustar-poner-como-primer-dia-pc-windows-10-formatear-ni-utilizar-programas-externos-2342957.jpg");
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+section.formateo_1 div {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  gap: 10px;
+}
+section.formateo_1 div h1 {
+  padding: 10px;
+  font-size: 37px;
+  color: #2f8cf0;
+  background-color: rgba(0, 0, 0, 0.662745098);
+  border-radius: 5px;
+}
+section.formateo_1 div h2 {
+  padding: 10px;
+  max-width: 950px;
+  font-weight: 400;
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0.662745098);
+  border-radius: 5px;
+  text-align: center;
+}
+section.formateo_1 div p {
+  padding: 10px;
+  font-weight: 200;
+  background-color: rgba(0, 0, 0, 0.662745098);
+  border-radius: 5px;
+}
+section.formateo_1 div a {
+  background-color: #2f8cf0;
+  text-decoration: none;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+}
+section.formateo_1 div a:hover {
+  color: black;
+  transition: all 0.6s;
+}
+
+section.formateo_2 {
+  font-family: "montserrat", sans-serif;
+  padding-inline: 30px;
+  padding-top: 5px;
+}
+section.formateo_2 div.container {
+  display: grid;
+  height: 500px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin: auto;
+  border: solid 1.5px #2f8cf0;
+}
+section.formateo_2 div.container div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section.formateo_2 div.container div h2 {
+  color: #2f8cf0;
+  padding-bottom: 10px;
+  font-size: 30px;
+}
+section.formateo_2 div.container div p {
+  text-align: center;
+  min-width: 60px;
+  max-width: 500px;
+}
+section.formateo_2 h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+section.formateo_3 {
+  font-family: "montserrat", sans-serif;
+  background-color: #2f8cf0;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section.formateo_3 div {
+  background-color: white;
+  padding: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section.formateo_3 div p {
+  min-width: 100px;
+  max-width: 600px;
+  text-align: center;
+  padding-top: 10px;
+  font-weight: 500;
+}/*# sourceMappingURL=style.css.map */

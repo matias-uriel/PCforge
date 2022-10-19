@@ -1,0 +1,124 @@
+section.formateo_1 {
+    font-family: "montserrat", sans-serif;
+    background-image: url("https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2021/05/como-ajustar-poner-como-primer-dia-pc-windows-10-formatear-ni-utilizar-programas-externos-2342957.jpg");
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        height: 500px;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        gap: 10px;
+
+        h1 {
+            padding: 10px;
+            font-size: 37px;
+            color: $maincolor;
+            background-color: #000000a9;
+            border-radius: 5px;
+        }
+
+        h2 {
+            padding: 10px;
+            max-width: 950px;
+            font-weight: 400;
+            font-size: 20px;
+            background-color: #000000a9;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        p {
+            padding: 10px;
+            font-weight: 200;
+            background-color: #000000a9;
+            border-radius: 5px;
+        }
+
+        a {
+            background-color: $maincolor;
+            text-decoration: none;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        a:hover {
+            color: black;
+            transition: all 0.6s;
+        }
+    }
+}
+
+section.formateo_2 {
+        font-family: "montserrat", sans-serif;
+        padding-inline: 30px;
+        padding-top: 5px;
+        
+        div.container {
+            display: grid;
+            height: 500px;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            margin: auto;
+            border: solid 1.5px $maincolor;
+    
+            div {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+    
+                h2 {
+                    color: $maincolor;
+                    padding-bottom: 10px;
+                    font-size: 30px;
+                }
+    
+                p {
+                    text-align: center;
+                    min-width: 60px;
+                    max-width: 500px;
+                }
+            }
+        }
+    
+        h1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+        }
+}
+
+section.formateo_3 {
+    font-family: "montserrat", sans-serif;
+    background-color: $maincolor;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    div {
+        background-color: white;
+        padding: 70px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        p {
+            min-width: 100px;
+            max-width: 600px;
+            text-align: center;
+            padding-top: 10px;
+            font-weight: 500;
+        }
+    }
+}
