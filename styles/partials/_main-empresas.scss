@@ -1,0 +1,27 @@
+section.empresas_2 {
+    display: grid;
+    height: 500px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: auto;
+    border: solid 1.5px $maincolor;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h2 {
+            color: $maincolor;
+            padding-bottom: 10px;
+            font-size: 30px;
+        }
+
+        p {
+            text-align: center;
+            min-width: 60px;
+            max-width: 500px;
+        }
+    }
+}
