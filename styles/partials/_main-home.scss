@@ -16,7 +16,16 @@ section.portada {
         display: grid;
         grid-template-columns: 1fr 1fr;
         margin: auto;
-        padding-inline: 300px;
+        padding-right: 250px;
+        padding-left: 250px;
+
+        @include phone {
+            display: grid;
+            grid-template-columns: 1fr;
+            margin: auto;
+            padding-right: 0;
+            padding-left: 0;
+        }
 
         li {
             display: flex;
@@ -25,6 +34,10 @@ section.portada {
             height: 300px;
             justify-content: center;
             align-items: center;
+
+            @include phone {
+                height: 120px;
+            }
 
             a {
                 display: flex;
@@ -75,19 +88,19 @@ section.portada {
         }
 
         li:hover:nth-child(1) {
-        border-color: $maincolor;        
+            border-color: $maincolor;
         }
-        
+
         li:hover:nth-child(2) {
-        border-color: $maincolor;    
+            border-color: $maincolor;
         }
 
         li:hover:nth-child(3) {
-        border-color: $maincolor;    
+            border-color: $maincolor;
         }
 
         li:hover:nth-child(4) {
-        border-color: $maincolor;    
+            border-color: $maincolor;
         }
     }
 }
@@ -99,6 +112,11 @@ section.index_1 {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @include phone {
+        background-color: white;
+        height: 250px;
+    }
 
     div {
         display: flex;
@@ -112,22 +130,43 @@ section.index_1 {
         align-items: center;
         gap: 10px;
 
-        h1 {
-            font-size: 30px;
+        @include phone {
+            width: 100%;
+            gap: 0;
+            border: none;
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
         }
 
-        h2{
+        h1 {
+            font-size: 30px;
+
+            @include phone {
+                font-size: 25px;
+            }
+        }
+
+        h2 {
             font-weight: 500;
             color: $maincolor;
+
+            @include phone {
+                font-size: 20px;
+            }
         }
 
         p {
             font-weight: 400;
-            
+
             span {
                 color: $maincolor;
                 font-weight: 700;
 
+            }
+
+            @include phone {
+                font-size: 15px;
             }
         }
 
@@ -138,6 +177,10 @@ section.index_1 {
             text-decoration: none;
             color: white;
             border-radius: 3px;
+
+            @include phone {
+                padding: 20px;
+            }
         }
     }
 
@@ -150,24 +193,42 @@ section.index_1 {
 section.index_2 {
     font-family: "montserrat", sans-serif;
     display: flex;
-    width: 100%;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     align-items: center;
     height: 150px;
+
+    @include phone {
+        justify-content: center;
+        width: 100%;
+        height: 100px;
+    }
 
     div {
         display: flex;
         flex-direction: column;
 
+        @include phone {
+            text-align: center;
+        }
+
         h1 {
-            margin: auto;
             font-size: 40px;
             color: $maincolor;
+
+            @include phone {
+                font-size: 25px;
+                text-align: center;
+            }
         }
 
         p {
             font-weight: 500;
             font-size: 20px;
+            text-align: center;
+
+            @include phone {
+                font-size: 15px;
+            }
         }
     }
 }
@@ -178,18 +239,27 @@ section.index_3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
     flex: 1;
     padding-bottom: 60px;
 
     h1 {
         padding-top: 30px;
         padding-bottom: 30px;
+        text-align: center;
+
+        @include phone {
+            font-size: 20px;
+            padding-inline: 20px;
+        }
     }
 
     div.container {
         display: flex;
         gap: 20px;
+
+        @include phone {
+            flex-direction: column;
+        }
 
         div {
             border: solid 1px;
@@ -197,22 +267,27 @@ section.index_3 {
             height: 420px;
             display: flex;
             flex-direction: column;
-            justify-content:space-evenly;
+            justify-content: space-evenly;
             align-items: center;
+
+            @include phone {
+                width: auto;
+                min-width: 350px;
+            }
 
             h1 {
 
-               .bronce {
-                color: #CD7F32;
-               } 
+                .bronce {
+                    color: #CD7F32;
+                }
 
-               .plata {
-                color: #C0C0C0;
-               }
+                .plata {
+                    color: #C0C0C0;
+                }
 
-               .oro {
-                color: #D4AF37;
-               }
+                .oro {
+                    color: #D4AF37;
+                }
             }
 
             h2 {
@@ -224,10 +299,10 @@ section.index_3 {
             }
 
             ul {
-                 li {
+                li {
                     padding-bottom: 5px;
                     font-weight: 500;
-                 }
+                }
             }
 
             a {
@@ -236,8 +311,13 @@ section.index_3 {
                 color: white;
                 padding: 10px;
                 border-radius: 3px;
+
+                @include phone {
+                    padding: 20px;
+                }
             }
         }
+
         a:hover {
             color: black;
             transition: all 0.6s;
@@ -248,12 +328,17 @@ section.index_3 {
 section.index_4 {
     font-family: "montserrat", sans-serif;
     display: flex;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     align-items: center;
     height: 600px;
     background-image: url("https://www.escuelamapa.edu.uy/wp-content/uploads/2016/06/REPARACIONPC.jpg");
     background-size: cover;
     background-position: center center;
+
+    @include phone {
+        flex-direction: column;
+        margin: auto;
+    }
 
     div.empresa {
         background-color: #0000009b;
@@ -265,6 +350,11 @@ section.index_4 {
         height: 250px;
         width: 600px;
         border-radius: 10px;
+
+        @include phone {
+            border-radius: 0px;
+            width: auto;
+        }
 
         h1 {
             padding-bottom: 10px;
@@ -279,6 +369,10 @@ section.index_4 {
 
         p {
             text-align: center;
+
+            @include phone {
+                max-width: 400px;
+            }
         }
 
         a {
@@ -288,6 +382,10 @@ section.index_4 {
             margin-top: 15px;
             padding: 10px;
             border-radius: 4px;
+
+            @include phone {
+                padding: 15px;
+            }
         }
 
         a:hover {
@@ -305,7 +403,7 @@ section.index_4 {
         justify-content: center;
         align-items: center;
         height: 250px;
-        width: 600px; 
+        width: 600px;
         border-radius: 10px;
 
         h1 {
@@ -314,6 +412,10 @@ section.index_4 {
 
         p {
             text-align: center;
+
+            @include phone {
+                max-width: 350px;
+            }
         }
 
         a {
@@ -323,6 +425,10 @@ section.index_4 {
             margin-top: 15px;
             padding: 10px;
             border-radius: 4px;
+
+            @include phone {
+                padding: 15px;
+            }
         }
 
         a:hover {
@@ -330,4 +436,4 @@ section.index_4 {
             transition: all 0.6s;
         }
     }
-}   
+}

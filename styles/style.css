@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap");
-
 * {
   margin: 0;
   padding: 0;
@@ -14,6 +13,11 @@ div.nav1 {
   padding-top: 12px;
   padding-bottom: 12px;
   padding-left: 60px;
+}
+@media screen and (max-width: 500px) {
+  div.nav1 {
+    display: none;
+  }
 }
 div.nav1 div.navtop {
   display: flex;
@@ -33,11 +37,14 @@ div.nav2 {
   padding-top: 40px;
   padding-bottom: 40px;
 }
+div.nav2 h1 {
+  display: flex;
+  flex-grow: 2;
+}
 div.nav2 ul {
   display: flex;
   flex: 1;
-  justify-content: center;
-  gap: 70px;
+  justify-content: space-evenly;
 }
 div.nav2 ul li {
   list-style: none;
@@ -47,7 +54,7 @@ div.nav2 ul li a {
   color: white;
   font-size: 17px;
 }
-div.nav2 a:hover {
+div.nav2 ul li a:hover {
   color: #2f8cf0;
   transition: all 0.5s;
 }
@@ -62,6 +69,16 @@ section.footer_1 {
   color: white;
   font-family: "montserrat", sans-serif;
   height: 170px;
+}
+@media screen and (max-width: 500px) {
+  section.footer_1 {
+    flex-direction: column;
+    height: 300px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
 }
 section.footer_1 h1 {
   padding-bottom: 10px;
@@ -82,6 +99,12 @@ section.footer_1 ul li a {
   text-decoration: none;
   color: white;
 }
+@media screen and (max-width: 500px) {
+  section.footer_1 ul li a {
+    -webkit-text-decoration: #2f8cf0;
+            text-decoration: #2f8cf0;
+  }
+}
 section.footer_1 a:hover {
   color: #2f8cf0;
   transition: all 0.5s;
@@ -90,7 +113,6 @@ section.footer_1 a:hover {
 section.footer_2 {
   font-family: "montserrat", sans-serif;
   display: flex;
-  width: 100%;
   flex: 1;
   justify-content: center;
   align-items: center;
@@ -99,13 +121,29 @@ section.footer_2 {
   padding-top: 50px;
   padding-bottom: 30px;
 }
+@media screen and (max-width: 500px) {
+  section.footer_2 {
+    padding-top: 15px;
+  }
+}
 section.footer_2 h1 {
   padding-right: 80px;
+}
+@media screen and (max-width: 500px) {
+  section.footer_2 h1 {
+    display: none;
+  }
 }
 section.footer_2 div {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
+}
+@media screen and (max-width: 500px) {
+  section.footer_2 div {
+    max-width: 350px;
+  }
 }
 section.footer_2 div h2 {
   font-weight: 500;
@@ -127,6 +165,7 @@ section.footer_3 {
   color: white;
   display: flex;
   justify-content: center;
+  text-align: center;
 }
 
 body {
@@ -145,7 +184,17 @@ section.portada ul {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: auto;
-  padding-inline: 300px;
+  padding-right: 250px;
+  padding-left: 250px;
+}
+@media screen and (max-width: 500px) {
+  section.portada ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: auto;
+    padding-right: 0;
+    padding-left: 0;
+  }
 }
 section.portada ul li {
   display: flex;
@@ -154,6 +203,11 @@ section.portada ul li {
   height: 300px;
   justify-content: center;
   align-items: center;
+}
+@media screen and (max-width: 500px) {
+  section.portada ul li {
+    height: 120px;
+  }
 }
 section.portada ul li a {
   display: flex;
@@ -217,6 +271,12 @@ section.index_1 {
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width: 500px) {
+  section.index_1 {
+    background-color: white;
+    height: 250px;
+  }
+}
 section.index_1 div {
   display: flex;
   flex-direction: column;
@@ -229,12 +289,32 @@ section.index_1 div {
   align-items: center;
   gap: 10px;
 }
+@media screen and (max-width: 500px) {
+  section.index_1 div {
+    width: 100%;
+    gap: 0;
+    border: none;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
 section.index_1 div h1 {
   font-size: 30px;
+}
+@media screen and (max-width: 500px) {
+  section.index_1 div h1 {
+    font-size: 25px;
+  }
 }
 section.index_1 div h2 {
   font-weight: 500;
   color: #2f8cf0;
+}
+@media screen and (max-width: 500px) {
+  section.index_1 div h2 {
+    font-size: 20px;
+  }
 }
 section.index_1 div p {
   font-weight: 400;
@@ -242,6 +322,11 @@ section.index_1 div p {
 section.index_1 div p span {
   color: #2f8cf0;
   font-weight: 700;
+}
+@media screen and (max-width: 500px) {
+  section.index_1 div p {
+    font-size: 15px;
+  }
 }
 section.index_1 div a {
   background-color: #2f8cf0;
@@ -251,6 +336,11 @@ section.index_1 div a {
   color: white;
   border-radius: 3px;
 }
+@media screen and (max-width: 500px) {
+  section.index_1 div a {
+    padding: 20px;
+  }
+}
 section.index_1 a:hover {
   color: black;
   transition: all 0.5s;
@@ -259,23 +349,45 @@ section.index_1 a:hover {
 section.index_2 {
   font-family: "montserrat", sans-serif;
   display: flex;
-  width: 100%;
   justify-content: space-evenly;
   align-items: center;
   height: 150px;
+}
+@media screen and (max-width: 500px) {
+  section.index_2 {
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+  }
 }
 section.index_2 div {
   display: flex;
   flex-direction: column;
 }
+@media screen and (max-width: 500px) {
+  section.index_2 div {
+    text-align: center;
+  }
+}
 section.index_2 div h1 {
-  margin: auto;
   font-size: 40px;
   color: #2f8cf0;
+}
+@media screen and (max-width: 500px) {
+  section.index_2 div h1 {
+    font-size: 25px;
+    text-align: center;
+  }
 }
 section.index_2 div p {
   font-weight: 500;
   font-size: 20px;
+  text-align: center;
+}
+@media screen and (max-width: 500px) {
+  section.index_2 div p {
+    font-size: 15px;
+  }
 }
 
 section.index_3 {
@@ -284,17 +396,28 @@ section.index_3 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
   flex: 1;
   padding-bottom: 60px;
 }
 section.index_3 h1 {
   padding-top: 30px;
   padding-bottom: 30px;
+  text-align: center;
+}
+@media screen and (max-width: 500px) {
+  section.index_3 h1 {
+    font-size: 20px;
+    padding-inline: 20px;
+  }
 }
 section.index_3 div.container {
   display: flex;
   gap: 20px;
+}
+@media screen and (max-width: 500px) {
+  section.index_3 div.container {
+    flex-direction: column;
+  }
 }
 section.index_3 div.container div {
   border: solid 1px;
@@ -304,6 +427,12 @@ section.index_3 div.container div {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+}
+@media screen and (max-width: 500px) {
+  section.index_3 div.container div {
+    width: auto;
+    min-width: 350px;
+  }
 }
 section.index_3 div.container div h1 .bronce {
   color: #CD7F32;
@@ -331,6 +460,11 @@ section.index_3 div.container div a {
   padding: 10px;
   border-radius: 3px;
 }
+@media screen and (max-width: 500px) {
+  section.index_3 div.container div a {
+    padding: 20px;
+  }
+}
 section.index_3 div.container a:hover {
   color: black;
   transition: all 0.6s;
@@ -346,6 +480,12 @@ section.index_4 {
   background-size: cover;
   background-position: center center;
 }
+@media screen and (max-width: 500px) {
+  section.index_4 {
+    flex-direction: column;
+    margin: auto;
+  }
+}
 section.index_4 div.empresa {
   background-color: rgba(0, 0, 0, 0.6078431373);
   color: white;
@@ -356,6 +496,12 @@ section.index_4 div.empresa {
   height: 250px;
   width: 600px;
   border-radius: 10px;
+}
+@media screen and (max-width: 500px) {
+  section.index_4 div.empresa {
+    border-radius: 0px;
+    width: auto;
+  }
 }
 section.index_4 div.empresa h1 {
   padding-bottom: 10px;
@@ -369,6 +515,11 @@ section.index_4 div.empresa h2 {
 section.index_4 div.empresa p {
   text-align: center;
 }
+@media screen and (max-width: 500px) {
+  section.index_4 div.empresa p {
+    max-width: 400px;
+  }
+}
 section.index_4 div.empresa a {
   background-color: #2f8cf0;
   text-decoration: none;
@@ -376,6 +527,11 @@ section.index_4 div.empresa a {
   margin-top: 15px;
   padding: 10px;
   border-radius: 4px;
+}
+@media screen and (max-width: 500px) {
+  section.index_4 div.empresa a {
+    padding: 15px;
+  }
 }
 section.index_4 div.empresa a:hover {
   color: black;
@@ -398,6 +554,11 @@ section.index_4 div.forma h1 {
 section.index_4 div.forma p {
   text-align: center;
 }
+@media screen and (max-width: 500px) {
+  section.index_4 div.forma p {
+    max-width: 350px;
+  }
+}
 section.index_4 div.forma a {
   background-color: #2f8cf0;
   text-decoration: none;
@@ -405,6 +566,11 @@ section.index_4 div.forma a {
   margin-top: 15px;
   padding: 10px;
   border-radius: 4px;
+}
+@media screen and (max-width: 500px) {
+  section.index_4 div.forma a {
+    padding: 15px;
+  }
 }
 section.index_4 div.forma a:hover {
   color: black;

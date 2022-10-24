@@ -10,6 +10,15 @@ section.footer_1 {
     font-family: "montserrat", sans-serif;
     height: 170px;
 
+    @include phone {
+        flex-direction: column;
+        height: 300px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
     h1 {
         padding-bottom: 10px;
         font-weight: 400;
@@ -30,6 +39,10 @@ section.footer_1 {
             a {
                 text-decoration: none;
                 color: white;
+
+                @include phone {
+                    text-decoration: $maincolor;
+                }
             }
         }
     }
@@ -43,7 +56,6 @@ section.footer_1 {
 section.footer_2 {
     font-family: "montserrat", sans-serif;
     display: flex;
-    width: 100%;
     flex: 1;
     justify-content: center;
     align-items: center;
@@ -52,14 +64,27 @@ section.footer_2 {
     padding-top: 50px;
     padding-bottom: 30px;
 
+    @include phone {
+        padding-top: 15px;
+    }
+
     h1 {
         padding-right: 80px;
+
+        @include phone {
+            display: none;
+        }
     }
 
     div {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        text-align: center;
+
+        @include phone {
+            max-width: 350px;
+        }
 
         h2 {
             font-weight: 500;
@@ -84,4 +109,5 @@ section.footer_3 {
     color: white;
     display: flex;
     justify-content: center;
+    text-align: center;
 }

@@ -8,11 +8,15 @@ div.nav1 {
     padding-bottom: 12px;
     padding-left: 60px;
 
+    @include phone {
+        display: none;
+    }
+
 
     div.navtop {
         display: flex;
         flex: 1;
-        justify-content:space-between;
+        justify-content: space-between;
         padding-inline: 60px;
     }
 }
@@ -28,11 +32,15 @@ div.nav2 {
     padding-top: 40px;
     padding-bottom: 40px;
 
+    h1 {
+        display: flex;
+        flex-grow: 2;
+    }
+
     ul {
         display: flex;
         flex: 1;
-        justify-content: center;
-        gap: 70px;
+        justify-content: space-evenly;
 
         li {
             list-style: none;
@@ -42,11 +50,12 @@ div.nav2 {
                 color: white;
                 font-size: 17px;
             }
-        }
-    }
 
-    a:hover {
-        color:$maincolor;
-        transition: all 0.5s;
+            a:hover {
+                color: $maincolor;
+                transition: all 0.5s;
+            }
+            
+        }
     }
 }
