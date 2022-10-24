@@ -6,6 +6,10 @@ section.formateo_1 {
     background-size: cover;
     background-position: center center;
 
+    @include phone {
+        height: 330px;
+    }
+
     div {
         display: flex;
         flex-direction: column;
@@ -14,13 +18,25 @@ section.formateo_1 {
         justify-content: center;
         color: white;
         gap: 10px;
+        text-align: center;
+        
+        @include phone {
+            gap: 5px;
+            height: 300px;
+        }
 
         h1 {
             padding: 10px;
             font-size: 37px;
             color: $maincolor;
-            background-color: #000000a9;
+            background-color: #0000008a;
             border-radius: 5px;
+
+            @include phone {
+                border-radius: 0;
+                background-color: #0000008a;
+                font-size: 30px;
+            }
         }
 
         h2 {
@@ -28,16 +44,26 @@ section.formateo_1 {
             max-width: 950px;
             font-weight: 400;
             font-size: 20px;
-            background-color: #000000a9;
+            background-color: #0000008a;
             border-radius: 5px;
             text-align: center;
+
+            @include phone {
+                border-radius: 0;
+                background-color: #0000008a;
+                font-size: 17px;
+            }
         }
 
         p {
             padding: 10px;
             font-weight: 200;
-            background-color: #000000a9;
+            background-color: #0000008a;
             border-radius: 5px;
+
+            @include phone {
+                display: none;
+            }
         }
 
         a {
@@ -46,6 +72,11 @@ section.formateo_1 {
             color: white;
             padding: 15px;
             border-radius: 5px;
+
+            @include phone {
+                padding: 20px;
+                border-radius: 10px;
+            }
         }
 
         a:hover {
@@ -59,6 +90,11 @@ section.formateo_2 {
         font-family: "montserrat", sans-serif;
         padding-inline: 30px;
         padding-top: 5px;
+
+        @include phone {
+            padding-inline: 10px;
+            padding-top: 10px;
+        }
         
         div.container {
             display: grid;
@@ -67,23 +103,38 @@ section.formateo_2 {
             grid-template-rows: 1fr 1fr;
             margin: auto;
             border: solid 1.5px $maincolor;
+            text-align: center;
+
+            @include phone {
+                display: flex;
+                flex-direction: column;
+                height: 1000px;
+                justify-content: space-around;
+                align-items: center;
+                border: solid 1.5px black;
+            }
     
             div {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                text-align: center;
     
                 h2 {
                     color: $maincolor;
                     padding-bottom: 10px;
                     font-size: 30px;
+
+                    @include phone {
+                        font-size: 23px;
+                    }
                 }
     
                 p {
                     text-align: center;
-                    min-width: 60px;
-                    max-width: 500px;
+                    min-width: 300px;
+                    max-width: 300px;
                 }
             }
         }
@@ -104,6 +155,11 @@ section.formateo_3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+
+    @include phone {
+        background-color: white;
+    }
 
     div {
         background-color: white;
@@ -113,12 +169,28 @@ section.formateo_3 {
         justify-content: center;
         align-items: center;
 
+        @include phone {
+            padding: 0;
+        }
+
+        h1 {
+            @include phone {
+                font-size: 20px;
+                font-weight: 600;
+            }
+        }
+
         p {
             min-width: 100px;
             max-width: 600px;
             text-align: center;
             padding-top: 10px;
             font-weight: 500;
+
+            @include phone {
+                max-width: 350px;
+                min-width: 350px;
+            }
         }
     }
 }

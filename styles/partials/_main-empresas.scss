@@ -10,8 +10,19 @@ section.empresas_1 {
     margin-inline: 100px;
     border-radius: 5px;
 
+    @include phone {
+        margin-inline: 5px;
+        height: 350px;
+    }
+
     h1 {
         font-size: 30px;
+        text-align: center;
+
+        @include phone {
+            font-size: 25px;
+            color: $maincolor;
+        }     
     }
 
     p {
@@ -31,6 +42,11 @@ section.empresas_1 {
         padding: 15px;
         font-weight: 500;
         border-radius: 3px;
+        
+        @include phone {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
     }
 
     a:hover {
@@ -52,6 +68,12 @@ section.empresas_2 {
     padding-top: 40px;
     padding-bottom: 40px;
     gap: 70px;
+
+    @include phone {
+        gap: 0;
+        flex-direction: column;
+        background-image: none;
+    }
 
     div {
         background-color: rgb(244, 241, 241);

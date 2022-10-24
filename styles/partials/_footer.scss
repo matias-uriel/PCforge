@@ -22,6 +22,7 @@ section.footer_1 {
     h1 {
         padding-bottom: 10px;
         font-weight: 400;
+        font-size: 20px;
     }
 
     p {
@@ -39,11 +40,14 @@ section.footer_1 {
             a {
                 text-decoration: none;
                 color: white;
-
-                @include phone {
-                    text-decoration: $maincolor;
-                }
             }
+        }
+    }
+
+    ul.redes {
+        @include phone {
+            display: flex;
+            gap: 15px;
         }
     }
 
