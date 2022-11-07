@@ -9,10 +9,20 @@ div.nav1 {
   font-family: "montserrat", sans-serif;
   color: white;
   display: flex;
+  justify-content: center;
   align-items: center;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-left: 60px;
+  text-align: center;
+  padding-top: 15px;
+  padding-left: 20px;
+  margin-top: 90px;
+}
+div.nav1 img {
+  height: 21px;
+}
+@media screen and (max-width: 1025px) {
+  div.nav1 {
+    display: none;
+  }
 }
 @media screen and (max-width: 500px) {
   div.nav1 {
@@ -23,40 +33,108 @@ div.nav1 div.navtop {
   display: flex;
   flex: 1;
   justify-content: space-between;
+  align-items: center;
+  text-align: center;
   padding-inline: 60px;
 }
 
-div.nav2 {
-  display: flex;
-  font-family: "montserrat", sans-serif;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #232222;
-  color: white;
-  padding-inline: 40px;
-  padding-top: 40px;
-  padding-bottom: 40px;
+@media screen and (min-width: 992px) {
+  div.nav2 {
+    font-family: "montserrat", sans-serif !important;
+  }
+  div.nav2 nav {
+    background-color: #232222 !important;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  div.nav2 nav a.navbar-brand {
+    display: flex;
+    flex: 3;
+    margin-left: 20px;
+    font-size: 25px;
+  }
+  div.nav2 nav a.navbar-brand:hover {
+    color: #2f8cf0;
+    transition: all 1s;
+  }
+  div.nav2 nav div#navbarNav {
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+  }
+  div.nav2 nav div#navbarNav a {
+    font-size: 18px;
+  }
+  div.nav2 nav div#navbarNav a:hover {
+    color: #2f8cf0;
+    transition: all 0.2s;
+  }
 }
-div.nav2 h1 {
-  display: flex;
-  flex-grow: 2;
+@media screen and (min-width: 501px) {
+  div.nav2 nav {
+    background-color: #232222 !important;
+    height: 90px;
+  }
+  div.nav2 nav a {
+    color: white;
+  }
+  div.nav2 nav a:hover {
+    color: white;
+  }
+  div.nav2 nav .navbar-toggler-icon {
+    background-image: url("https://mdbootstrap.com/img/svg/hamburger2.svg?color=fff");
+    background-size: 30px;
+  }
+  div.nav2 nav div#navbarNav {
+    background-color: #232222 !important;
+    border-radius: 5px;
+  }
+  div.nav2 nav div#navbarNav li {
+    text-align: center;
+  }
+  div.nav2 nav div#navbarNav li a {
+    color: white;
+  }
 }
-div.nav2 ul {
-  display: flex;
-  flex: 1;
-  justify-content: space-evenly;
-}
-div.nav2 ul li {
-  list-style: none;
-}
-div.nav2 ul li a {
-  text-decoration: none;
-  color: white;
-  font-size: 17px;
-}
-div.nav2 ul li a:hover {
-  color: #2f8cf0;
-  transition: all 0.5s;
+@media screen and (max-width: 500px) {
+  div.nav2 nav {
+    background-color: #232222 !important;
+    height: 90px;
+  }
+  div.nav2 nav a {
+    color: white;
+  }
+  div.nav2 nav a:hover {
+    color: white;
+  }
+  div.nav2 nav button {
+    border: none;
+  }
+  div.nav2 nav button .navbar-toggler-icon {
+    background-image: url("https://mdbootstrap.com/img/svg/hamburger2.svg?color=fff");
+    background-size: 30px;
+  }
+  div.nav2 nav .navbar-toggler,
+div.nav2 nav .navbar-toggler:focus,
+div.nav2 nav .navbar-toggler:active,
+div.nav2 nav .navbar-toggler-icon:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+  }
+  div.nav2 nav div#navbarNav {
+    background-color: #232222 !important;
+    border-radius: 5px;
+  }
+  div.nav2 nav div#navbarNav li {
+    text-align: center;
+  }
+  div.nav2 nav div#navbarNav li a {
+    color: white;
+  }
 }
 
 section.footer_1 {
@@ -73,11 +151,12 @@ section.footer_1 {
 @media screen and (max-width: 500px) {
   section.footer_1 {
     flex-direction: column;
-    height: 300px;
+    height: 350px;
     text-align: center;
     justify-content: center;
     align-items: center;
     gap: 20px;
+    font-size: 13px;
   }
 }
 section.footer_1 h1 {
@@ -172,11 +251,17 @@ section.footer_3 {
 body {
   background-color: rgb(243, 243, 243);
 }
+@media screen and (max-width: 1025px) {
+  body {
+    margin-top: 90px;
+  }
+}
 
 hr {
   display: flex;
   margin: auto;
-  width: 50%;
+  width: 70%;
+  color: black;
 }
 
 section.portada ul {
@@ -188,11 +273,22 @@ section.portada ul {
   padding-right: 250px;
   padding-left: 250px;
 }
+@media screen and (max-width: 1440px) {
+  section.portada ul {
+    padding-left: 130px;
+    padding-right: 130px;
+  }
+}
+@media screen and (max-width: 1025px) {
+  section.portada ul {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 @media screen and (max-width: 500px) {
   section.portada ul {
     display: grid;
     grid-template-columns: 1fr;
-    margin: auto;
     padding-right: 0;
     padding-left: 0;
   }
@@ -267,10 +363,16 @@ section.portada ul li:hover:nth-child(4) {
 section.index_1 {
   font-family: "montserrat", sans-serif;
   background-color: #2f8cf0;
-  height: 370px;
+  height: 430px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media screen and (max-width: 1025px) {
+  section.index_1 {
+    background-color: white;
+    height: 350px;
+  }
 }
 @media screen and (max-width: 500px) {
   section.index_1 {
@@ -289,6 +391,16 @@ section.index_1 div {
   justify-content: center;
   align-items: center;
   gap: 10px;
+}
+@media screen and (max-width: 1025px) {
+  section.index_1 div {
+    width: 100%;
+    gap: 0;
+    border: none;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 }
 @media screen and (max-width: 500px) {
   section.index_1 div {
@@ -364,6 +476,9 @@ section.index_2 {
 section.index_2 div {
   display: flex;
   flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 @media screen and (max-width: 500px) {
   section.index_2 div {
@@ -398,12 +513,13 @@ section.index_3 {
   justify-content: center;
   align-items: center;
   flex: 1;
-  padding-bottom: 60px;
+  padding-bottom: 40px;
 }
 section.index_3 h1 {
   padding-top: 30px;
   padding-bottom: 30px;
   text-align: center;
+  font-size: 35px;
 }
 @media screen and (max-width: 500px) {
   section.index_3 h1 {
@@ -413,17 +529,24 @@ section.index_3 h1 {
 }
 section.index_3 div.container {
   display: flex;
-  gap: 20px;
+  gap: 40px;
+  justify-content: center;
+}
+@media screen and (max-width: 1025px) {
+  section.index_3 div.container {
+    gap: 10px;
+  }
 }
 @media screen and (max-width: 500px) {
   section.index_3 div.container {
     flex-direction: column;
+    gap: 10px;
   }
 }
 section.index_3 div.container div {
   border: solid 1px;
-  width: 300px;
-  height: 420px;
+  width: 350px;
+  height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -433,6 +556,7 @@ section.index_3 div.container div {
   section.index_3 div.container div {
     width: auto;
     min-width: 350px;
+    height: 500px;
   }
 }
 section.index_3 div.container div h1 .bronce {
@@ -485,6 +609,7 @@ section.index_4 {
   section.index_4 {
     flex-direction: column;
     margin: auto;
+    height: 800px;
   }
 }
 section.index_4 div.empresa {
@@ -494,18 +619,40 @@ section.index_4 div.empresa {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 250px;
-  width: 600px;
   border-radius: 10px;
+}
+@media screen and (min-width: 1440px) {
+  section.index_4 div.empresa {
+    height: 400px;
+    width: 800px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  section.index_4 div.empresa {
+    width: 600px;
+    height: 400px;
+  }
+}
+@media screen and (max-width: 1025px) {
+  section.index_4 div.empresa {
+    height: 300px;
+    width: 450px;
+  }
 }
 @media screen and (max-width: 500px) {
   section.index_4 div.empresa {
-    border-radius: 0px;
-    width: auto;
+    width: 100%;
+    border-radius: 0;
   }
 }
 section.index_4 div.empresa h1 {
   padding-bottom: 10px;
+  text-align: center;
+}
+@media screen and (max-width: 500px) {
+  section.index_4 div.empresa h1 {
+    font-size: 20px;
+  }
 }
 section.index_4 div.empresa h2 {
   font-size: 15px;
@@ -518,7 +665,8 @@ section.index_4 div.empresa p {
 }
 @media screen and (max-width: 500px) {
   section.index_4 div.empresa p {
-    max-width: 400px;
+    max-width: 450px;
+    font-size: 15px;
   }
 }
 section.index_4 div.empresa a {
@@ -545,19 +693,64 @@ section.index_4 div.forma {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 250px;
-  width: 600px;
   border-radius: 10px;
+}
+@media screen and (min-width: 1440px) {
+  section.index_4 div.forma {
+    height: 400px;
+    width: 800px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  section.index_4 div.forma {
+    width: 600px;
+    height: 400px;
+  }
+}
+@media screen and (max-width: 1025px) {
+  section.index_4 div.forma {
+    height: 400px;
+    width: 450px;
+  }
+}
+@media screen and (max-width: 500px) {
+  section.index_4 div.forma {
+    border-radius: 0px;
+    width: 100%;
+    height: 350px;
+  }
 }
 section.index_4 div.forma h1 {
   padding-bottom: 10px;
+  text-align: center;
+}
+@media screen and (max-width: 500px) {
+  section.index_4 div.forma h1 {
+    font-size: 20px;
+  }
 }
 section.index_4 div.forma p {
   text-align: center;
 }
+@media screen and (min-width: 1440px) {
+  section.index_4 div.forma p {
+    max-width: 700px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  section.index_4 div.forma p {
+    max-width: 550px;
+  }
+}
+@media screen and (max-width: 1025px) {
+  section.index_4 div.forma p {
+    max-width: 400px;
+  }
+}
 @media screen and (max-width: 500px) {
   section.index_4 div.forma p {
-    max-width: 350px;
+    max-width: 400px;
+    font-size: 15px;
   }
 }
 section.index_4 div.forma a {

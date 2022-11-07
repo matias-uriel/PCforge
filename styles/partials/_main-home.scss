@@ -1,11 +1,17 @@
 body {
     background-color: rgb(243, 243, 243);
+
+    @include tablet {
+        margin-top: 90px;
+    }
+
 }
 
 hr {
     display: flex;
     margin: auto;
-    width: 50%;
+    width: 70%; 
+    color: black;
 }
 
 section.portada {
@@ -19,10 +25,19 @@ section.portada {
         padding-right: 250px;
         padding-left: 250px;
 
+        @include note {
+            padding-left: 130px;
+            padding-right: 130px;
+        }
+
+        @include tablet {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
         @include phone {
             display: grid;
             grid-template-columns: 1fr;
-            margin: auto;
             padding-right: 0;
             padding-left: 0;
         }
@@ -108,10 +123,15 @@ section.portada {
 section.index_1 {
     font-family: "montserrat", sans-serif;
     background-color: $maincolor;
-    height: 370px;
+    height: 430px;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @include tablet {
+        background-color: white;
+        height: 350px;
+    }
 
     @include phone {
         background-color: white;
@@ -129,6 +149,15 @@ section.index_1 {
         justify-content: center;
         align-items: center;
         gap: 10px;
+
+        @include tablet {
+            width: 100%;
+            gap: 0;
+            border: none;
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
 
         @include phone {
             width: 100%;
@@ -206,6 +235,9 @@ section.index_2 {
     div {
         display: flex;
         flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
 
         @include phone {
             text-align: center;
@@ -240,12 +272,13 @@ section.index_3 {
     justify-content: center;
     align-items: center;
     flex: 1;
-    padding-bottom: 60px;
+    padding-bottom: 40px;
 
     h1 {
         padding-top: 30px;
         padding-bottom: 30px;
         text-align: center;
+        font-size: 35px;
 
         @include phone {
             font-size: 20px;
@@ -255,16 +288,22 @@ section.index_3 {
 
     div.container {
         display: flex;
-        gap: 20px;
+        gap: 40px;
+        justify-content: center;
+
+        @include tablet {
+            gap: 10px;
+        }
 
         @include phone {
             flex-direction: column;
+            gap: 10px;
         }
 
         div {
             border: solid 1px;
-            width: 300px;
-            height: 420px;
+            width: 350px;
+            height: 500px;
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
@@ -273,6 +312,7 @@ section.index_3 {
             @include phone {
                 width: auto;
                 min-width: 350px;
+                height: 500px;
             }
 
             h1 {
@@ -338,6 +378,7 @@ section.index_4 {
     @include phone {
         flex-direction: column;
         margin: auto;
+        height: 800px;
     }
 
     div.empresa {
@@ -347,17 +388,35 @@ section.index_4 {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 250px;
-        width: 600px;
         border-radius: 10px;
 
+        @include pc {
+            height: 400px;
+            width: 800px;
+        }
+
+        @include note {
+            width: 600px;
+            height: 400px;
+        }
+
+        @include tablet {
+            height: 300px;
+            width: 450px;
+        }
+
         @include phone {
-            border-radius: 0px;
-            width: auto;
+            width: 100%;
+            border-radius: 0;
         }
 
         h1 {
             padding-bottom: 10px;
+            text-align: center;
+
+            @include phone {
+                font-size: 20px;
+            }
         }
 
         h2 {
@@ -371,7 +430,8 @@ section.index_4 {
             text-align: center;
 
             @include phone {
-                max-width: 400px;
+                max-width: 450px;
+                font-size: 15px;
             }
         }
 
@@ -402,19 +462,56 @@ section.index_4 {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 250px;
-        width: 600px;
         border-radius: 10px;
+
+        @include pc {
+            height: 400px;
+            width: 800px;
+        }
+
+        @include note {
+            width: 600px;
+            height: 400px;
+        }
+
+        @include tablet {
+            height: 400px;
+            width: 450px;
+        }
+
+        @include phone {
+            border-radius: 0px;
+            width: 100%;
+            height: 350px;
+        }
 
         h1 {
             padding-bottom: 10px;
+            text-align: center;
+
+            @include phone {
+                font-size: 20px;
+            }
         }
 
         p {
             text-align: center;
 
+            @include pc {
+                max-width: 700px;
+            }
+
+            @include note {
+                max-width: 550px;
+            }
+
+            @include tablet {
+                max-width: 400px;
+            }
+
             @include phone {
-                max-width: 350px;
+                max-width: 400px;
+                font-size: 15px;
             }
         }
 

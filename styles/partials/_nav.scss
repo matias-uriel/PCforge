@@ -3,10 +3,20 @@ div.nav1 {
     font-family: "montserrat", sans-serif;
     color: white;
     display: flex;
+    justify-content: center;
     align-items: center;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    padding-left: 60px;
+    text-align: center;
+    padding-top: 15px;
+    padding-left: 20px;
+    margin-top: 90px;
+
+    img {
+        height: 21px;
+    }
+
+    @include tablet {
+        display: none;
+    }
 
     @include phone {
         display: none;
@@ -17,45 +27,131 @@ div.nav1 {
         display: flex;
         flex: 1;
         justify-content: space-between;
+        align-items: center;
+        text-align: center;
         padding-inline: 60px;
     }
 }
 
 div.nav2 {
-    display: flex;
-    font-family: "montserrat", sans-serif;
-    justify-content: space-between;
-    align-items: center;
-    background-color: $backcolor1;
-    color: white;
-    padding-inline: 40px;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    @include nav {
+        font-family: "montserrat", sans-serif !important;
 
-    h1 {
-        display: flex;
-        flex-grow: 2;
+        nav {
+            background-color: $backcolor1 !important;
+            height: 90px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            a.navbar-brand {
+                display: flex;
+                flex: 3;
+                margin-left: 20px;
+                font-size: 25px;
+            }
+
+            a.navbar-brand:hover {
+                color: $maincolor;
+                transition: all 1s;
+            }
+
+            div#navbarNav {
+                display: flex;
+                flex: 1;
+                justify-content: space-around;
+
+                a {
+                    font-size: 18px;
+                }
+
+                a:hover {
+                    color: $maincolor;
+                    transition: all 0.2s;
+                }
+            }
+        }
     }
 
-    ul {
-        display: flex;
-        flex: 1;
-        justify-content: space-evenly;
+    @include nav2 {
 
-        li {
-            list-style: none;
+        nav {
+            background-color: $backcolor1 !important;
+            height: 90px;
 
             a {
-                text-decoration: none;
                 color: white;
-                font-size: 17px;
             }
 
             a:hover {
-                color: $maincolor;
-                transition: all 0.5s;
+                color: white
             }
-            
+
+            .navbar-toggler-icon {
+                background-image: url('https://mdbootstrap.com/img/svg/hamburger2.svg?color=fff');
+                background-size: 30px;
+            }
+
+            div#navbarNav {
+                background-color: $backcolor1 !important;
+                border-radius: 5px;
+
+                li {
+                    text-align: center;
+
+                    a {
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+
+    @include phone {
+
+        nav {
+            background-color: $backcolor1 !important;
+            height: 90px;
+
+            a {
+                color: white;
+            }
+
+            a:hover {
+                color: white
+            }
+
+            button {
+                border: none;
+
+                .navbar-toggler-icon {
+                    background-image: url('https://mdbootstrap.com/img/svg/hamburger2.svg?color=fff');
+                    background-size: 30px;
+                }
+            }
+
+            .navbar-toggler,
+            .navbar-toggler:focus,
+            .navbar-toggler:active,
+            .navbar-toggler-icon:focus {
+                outline: none;
+                border: none;
+                box-shadow: none;
+            }
+
+            div#navbarNav {
+                background-color: $backcolor1 !important;
+                border-radius: 5px;
+
+                li {
+                    text-align: center;
+
+                    a {
+                        color: white;
+                    }
+                }
+            }
         }
     }
 }
