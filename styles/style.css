@@ -367,6 +367,7 @@ section.index_1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 @media screen and (max-width: 1025px) {
   section.index_1 {
@@ -377,7 +378,7 @@ section.index_1 {
 @media screen and (max-width: 500px) {
   section.index_1 {
     background-color: white;
-    height: 250px;
+    height: 320px;
   }
 }
 section.index_1 div {
@@ -386,10 +387,11 @@ section.index_1 div {
   background-color: white;
   padding-top: 70px;
   padding-bottom: 60px;
-  width: 1000px;
+  width: 55%;
   border: solid 1px black;
   justify-content: center;
   align-items: center;
+  text-align: center;
   gap: 10px;
 }
 @media screen and (max-width: 1025px) {
@@ -397,7 +399,6 @@ section.index_1 div {
     width: 100%;
     gap: 0;
     border: none;
-    text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
   }
@@ -407,7 +408,6 @@ section.index_1 div {
     width: 100%;
     gap: 0;
     border: none;
-    text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
   }
@@ -427,6 +427,7 @@ section.index_1 div h2 {
 @media screen and (max-width: 500px) {
   section.index_1 div h2 {
     font-size: 20px;
+    width: 95%;
   }
 }
 section.index_1 div p {
@@ -439,6 +440,7 @@ section.index_1 div p span {
 @media screen and (max-width: 500px) {
   section.index_1 div p {
     font-size: 15px;
+    width: 95%;
   }
 }
 section.index_1 div a {
@@ -531,6 +533,7 @@ section.index_3 div.container {
   display: flex;
   gap: 40px;
   justify-content: center;
+  align-items: center;
 }
 @media screen and (max-width: 1025px) {
   section.index_3 div.container {
@@ -652,6 +655,7 @@ section.index_4 div.empresa h1 {
 @media screen and (max-width: 500px) {
   section.index_4 div.empresa h1 {
     font-size: 20px;
+    max-width: 95%;
   }
 }
 section.index_4 div.empresa h2 {
@@ -665,7 +669,7 @@ section.index_4 div.empresa p {
 }
 @media screen and (max-width: 500px) {
   section.index_4 div.empresa p {
-    max-width: 450px;
+    max-width: 95%;
     font-size: 15px;
   }
 }
@@ -734,22 +738,22 @@ section.index_4 div.forma p {
 }
 @media screen and (min-width: 1440px) {
   section.index_4 div.forma p {
-    max-width: 700px;
+    max-width: 95%;
   }
 }
 @media screen and (max-width: 1440px) {
   section.index_4 div.forma p {
-    max-width: 550px;
+    max-width: 95%;
   }
 }
 @media screen and (max-width: 1025px) {
   section.index_4 div.forma p {
-    max-width: 400px;
+    max-width: 95%;
   }
 }
 @media screen and (max-width: 500px) {
   section.index_4 div.forma p {
-    max-width: 400px;
+    max-width: 95%;
     font-size: 15px;
   }
 }
