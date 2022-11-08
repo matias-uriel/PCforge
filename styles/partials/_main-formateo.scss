@@ -1,67 +1,84 @@
 section.formateo_1 {
     font-family: "montserrat", sans-serif;
-    background-image: url("https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2021/05/como-ajustar-poner-como-primer-dia-pc-windows-10-formatear-ni-utilizar-programas-externos-2342957.jpg");
+    background: linear-gradient(#0000006a 100%, rgba(0, 0, 0, 0.298)100%), url("https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2021/05/como-ajustar-poner-como-primer-dia-pc-windows-10-formatear-ni-utilizar-programas-externos-2342957.jpg");
     height: 500px;
+    width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 
+    @include tablet {
+        height: 400px;
+    }
+
     @include phone {
-        height: 330px;
+        height: 300px;
     }
 
     div {
         display: flex;
         flex-direction: column;
-        height: 500px;
         align-items: center;
         justify-content: center;
-        color: white;
-        gap: 10px;
         text-align: center;
-        
+        height: 500px;
+        width: 100%;
+        color: white;
+        gap: 5px;
+
+        @include tablet {
+            height: 400px;
+        }
+
         @include phone {
-            gap: 5px;
             height: 300px;
         }
 
         h1 {
-            padding: 10px;
+            padding: 3px;
             font-size: 37px;
             color: $maincolor;
-            background-color: #0000008a;
+            background-color: #0000006a;
             border-radius: 5px;
+            max-width: 90%;
+
+            @include tablet {
+                max-width: 80%;
+            }
 
             @include phone {
-                border-radius: 0;
-                background-color: #0000008a;
-                font-size: 30px;
+                color: white;
             }
         }
 
+
         h2 {
-            padding: 10px;
-            max-width: 950px;
+            padding: 3px;
+            max-width: 80%;
             font-weight: 400;
             font-size: 20px;
-            background-color: #0000008a;
+            background-color: #0000006a;
             border-radius: 5px;
             text-align: center;
 
+            @include tablet {
+                max-width: 90%;
+            }
+
             @include phone {
-                border-radius: 0;
-                background-color: #0000008a;
-                font-size: 17px;
+                display: none;
             }
         }
 
-        p {
-            padding: 10px;
-            font-weight: 200;
-            background-color: #0000008a;
-            border-radius: 5px;
 
-            @include phone {
+        p {
+            padding: 3px;
+            font-weight: 200;
+            background-color: #0000006a;
+            border-radius: 5px;
+            max-width: 90%;
+
+            @include tablet {
                 display: none;
             }
         }
@@ -73,9 +90,13 @@ section.formateo_1 {
             padding: 15px;
             border-radius: 5px;
 
-            @include phone {
+            @include tablet {
+                font-size: 25px;
                 padding: 20px;
-                border-radius: 10px;
+            } 
+
+            @include phone {
+                font-size: 15px;
             }
         }
 
@@ -86,110 +107,142 @@ section.formateo_1 {
     }
 }
 
+
 section.formateo_2 {
-        font-family: "montserrat", sans-serif;
-        padding-inline: 30px;
-        padding-top: 5px;
+    font-family: "montserrat", sans-serif;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    @include tablet {
+        height: 650px;
+    }
+
+    @include phone {
+        height: 1050px;
+    }
+
+    div.container {
+        display: grid;
+        height: 500px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin: auto;
+        border: solid 1.5px $maincolor;
+        text-align: center;
+
+        @include tablet {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            height: 600px;
+        }
 
         @include phone {
-            padding-inline: 10px;
-            padding-top: 10px;
-        }
-        
-        div.container {
-            display: grid;
-            height: 500px;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 1fr 1fr;
-            margin: auto;
-            border: solid 1.5px $maincolor;
-            text-align: center;
-
-            @include phone {
-                display: flex;
-                flex-direction: column;
-                height: 1000px;
-                justify-content: space-around;
-                align-items: center;
-                border: solid 1.5px black;
-            }
-    
-            div {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                text-align: center;
-    
-                h2 {
-                    color: $maincolor;
-                    padding-bottom: 10px;
-                    font-size: 30px;
-
-                    @include phone {
-                        font-size: 23px;
-                    }
-                }
-    
-                p {
-                    text-align: center;
-                    min-width: 300px;
-                    max-width: 300px;
-                }
-            }
-        }
-    
-        h1 {
             display: flex;
+            flex-direction: column;
+            height: 1000px;
+            justify-content: space-around;
+            align-items: center;
+            border: none;
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 100px;
+            text-align: center;
+
+            h2 {
+                color: $maincolor;
+                padding-bottom: 10px;
+                font-size: 30px;
+
+                @include phone {
+                    font-size: 23px;
+                }
+            }
+
+            p {
+                text-align: center;
+                min-width: 90%;
+                max-width: 90%;
+
+                @include tablet {
+                    font-size: 19px;
+                }
+
+                @include phone {
+                    font-size: 17px;
+                }
+            }
         }
+    }
 }
 
 section.formateo_3 {
     font-family: "montserrat", sans-serif;
     background-color: $maincolor;
-    height: 450px;
+    height: 530px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
 
+    @include tablet {
+        height: 460px;
+    }
+
     @include phone {
-        background-color: white;
+        height: 550px;
     }
 
     div {
         background-color: white;
-        padding: 70px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        height: 450px;
+        width: 50%;
+
+        @include note {
+            width: 80%;
+        }
+
+        @include tablet {
+            width: 90%;
+            height: 400px;
+        }
 
         @include phone {
-            padding: 0;
+            background-color: $maincolor;
+            height: 550px;
         }
 
         h1 {
+            font-size: 30px;
+
             @include phone {
                 font-size: 20px;
                 font-weight: 600;
+                color: white;
             }
         }
 
         p {
-            min-width: 100px;
-            max-width: 600px;
+            min-width: 85%;
+            max-width: 85%;
             text-align: center;
             padding-top: 10px;
             font-weight: 500;
+            font-size: 16px;
 
             @include phone {
-                max-width: 350px;
-                min-width: 350px;
+                color: white;
+                font-size: 15px;
+                min-width: 95%;
+                max-width: 95%;
             }
         }
     }

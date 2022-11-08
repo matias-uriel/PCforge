@@ -19,7 +19,7 @@ div.nav1 {
 div.nav1 img {
   height: 21px;
 }
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 800px) {
   div.nav1 {
     display: none;
   }
@@ -251,7 +251,7 @@ section.footer_3 {
 body {
   background-color: rgb(243, 243, 243);
 }
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 800px) {
   body {
     margin-top: 90px;
   }
@@ -279,7 +279,7 @@ section.portada ul {
     padding-right: 130px;
   }
 }
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 800px) {
   section.portada ul {
     padding-left: 0;
     padding-right: 0;
@@ -369,7 +369,7 @@ section.index_1 {
   align-items: center;
   text-align: center;
 }
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 800px) {
   section.index_1 {
     background-color: white;
     height: 350px;
@@ -394,7 +394,7 @@ section.index_1 div {
   text-align: center;
   gap: 10px;
 }
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 800px) {
   section.index_1 div {
     width: 100%;
     gap: 0;
@@ -514,6 +514,7 @@ section.index_3 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
   flex: 1;
   padding-bottom: 40px;
 }
@@ -531,13 +532,16 @@ section.index_3 h1 {
 }
 section.index_3 div.container {
   display: flex;
+  flex: 1;
+  width: 100%;
   gap: 40px;
   justify-content: center;
   align-items: center;
 }
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 800px) {
   section.index_3 div.container {
     gap: 10px;
+    flex-direction: column;
   }
 }
 @media screen and (max-width: 500px) {
@@ -554,6 +558,12 @@ section.index_3 div.container div {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+}
+@media screen and (max-width: 800px) {
+  section.index_3 div.container div {
+    width: 450px;
+    justify-content: center;
+  }
 }
 @media screen and (max-width: 500px) {
   section.index_3 div.container div {
@@ -580,6 +590,11 @@ section.index_3 div.container div h2 span {
 section.index_3 div.container div ul li {
   padding-bottom: 5px;
   font-weight: 500;
+}
+@media screen and (max-width: 800px) {
+  section.index_3 div.container div ul li {
+    font-size: 18px;
+  }
 }
 section.index_3 div.container div a {
   background-color: #2f8cf0;
@@ -636,7 +651,7 @@ section.index_4 div.empresa {
     height: 400px;
   }
 }
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 800px) {
   section.index_4 div.empresa {
     height: 300px;
     width: 450px;
@@ -711,7 +726,7 @@ section.index_4 div.forma {
     height: 400px;
   }
 }
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 800px) {
   section.index_4 div.forma {
     height: 400px;
     width: 450px;
@@ -746,7 +761,7 @@ section.index_4 div.forma p {
     max-width: 95%;
   }
 }
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 800px) {
   section.index_4 div.forma p {
     max-width: 95%;
   }
@@ -783,7 +798,7 @@ section.contrato_1 {
   background-size: cover;
   background-position: center center;
 }
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 800px) {
   section.contrato_1 {
     height: 350px;
     display: flex;
@@ -818,7 +833,7 @@ section.contrato_1 div {
   text-align: start;
   gap: 5px;
 }
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 800px) {
   section.contrato_1 div {
     flex: 1;
     margin-left: 0px;
@@ -850,7 +865,7 @@ section.contrato_1 div p {
   background-color: rgba(0, 0, 0, 0.4156862745);
   border-radius: 10px;
 }
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 800px) {
   section.contrato_1 div p {
     color: #2f8cf0;
     padding: 3px;
@@ -868,7 +883,7 @@ section.contrato_1 div h1 {
   background-color: rgba(0, 0, 0, 0.4156862745);
   border-radius: 10px;
 }
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 800px) {
   section.contrato_1 div h1 {
     color: white;
     padding: 3px;
@@ -923,10 +938,16 @@ section.contrato_2 div.container {
   gap: 20px;
   text-align: center;
 }
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 800px) {
   section.contrato_2 div.container {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+    height: 650px;
+    width: 100%;
+    gap: 5px;
+    border: none;
+    justify-content: center;
+    align-items: center;
   }
 }
 @media screen and (max-width: 500px) {
@@ -951,6 +972,11 @@ section.contrato_2 div.container div {
   align-items: center;
   text-align: center;
 }
+@media screen and (max-width: 800px) {
+  section.contrato_2 div.container div {
+    width: 95%;
+  }
+}
 @media screen and (max-width: 500px) {
   section.contrato_2 div.container div {
     width: 100%;
@@ -969,8 +995,13 @@ section.contrato_2 div.container div h2 {
 }
 section.contrato_2 div.container div p {
   text-align: center;
-  min-width: 400px;
+  min-width: 95%;
   max-width: 95%;
+}
+@media screen and (max-width: 800px) {
+  section.contrato_2 div.container div p {
+    font-size: 18px;
+  }
 }
 @media screen and (max-width: 500px) {
   section.contrato_2 div.container div p {
@@ -1012,70 +1043,89 @@ section.contrato_3 p span {
 
 section.formateo_1 {
   font-family: "montserrat", sans-serif;
-  background-image: url("https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2021/05/como-ajustar-poner-como-primer-dia-pc-windows-10-formatear-ni-utilizar-programas-externos-2342957.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.4156862745) 100%, rgba(0, 0, 0, 0.298) 100%), url("https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2021/05/como-ajustar-poner-como-primer-dia-pc-windows-10-formatear-ni-utilizar-programas-externos-2342957.jpg");
   height: 500px;
+  width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
+@media screen and (max-width: 800px) {
+  section.formateo_1 {
+    height: 400px;
+  }
+}
 @media screen and (max-width: 500px) {
   section.formateo_1 {
-    height: 330px;
+    height: 300px;
   }
 }
 section.formateo_1 div {
   display: flex;
   flex-direction: column;
-  height: 500px;
   align-items: center;
   justify-content: center;
-  color: white;
-  gap: 10px;
   text-align: center;
+  height: 500px;
+  width: 100%;
+  color: white;
+  gap: 5px;
+}
+@media screen and (max-width: 800px) {
+  section.formateo_1 div {
+    height: 400px;
+  }
 }
 @media screen and (max-width: 500px) {
   section.formateo_1 div {
-    gap: 5px;
     height: 300px;
   }
 }
 section.formateo_1 div h1 {
-  padding: 10px;
+  padding: 3px;
   font-size: 37px;
   color: #2f8cf0;
-  background-color: rgba(0, 0, 0, 0.5411764706);
+  background-color: rgba(0, 0, 0, 0.4156862745);
   border-radius: 5px;
+  max-width: 90%;
+}
+@media screen and (max-width: 800px) {
+  section.formateo_1 div h1 {
+    max-width: 80%;
+  }
 }
 @media screen and (max-width: 500px) {
   section.formateo_1 div h1 {
-    border-radius: 0;
-    background-color: rgba(0, 0, 0, 0.5411764706);
-    font-size: 30px;
+    color: white;
   }
 }
 section.formateo_1 div h2 {
-  padding: 10px;
-  max-width: 950px;
+  padding: 3px;
+  max-width: 80%;
   font-weight: 400;
   font-size: 20px;
-  background-color: rgba(0, 0, 0, 0.5411764706);
+  background-color: rgba(0, 0, 0, 0.4156862745);
   border-radius: 5px;
   text-align: center;
 }
+@media screen and (max-width: 800px) {
+  section.formateo_1 div h2 {
+    max-width: 90%;
+  }
+}
 @media screen and (max-width: 500px) {
   section.formateo_1 div h2 {
-    border-radius: 0;
-    background-color: rgba(0, 0, 0, 0.5411764706);
-    font-size: 17px;
+    display: none;
   }
 }
 section.formateo_1 div p {
-  padding: 10px;
+  padding: 3px;
   font-weight: 200;
-  background-color: rgba(0, 0, 0, 0.5411764706);
+  background-color: rgba(0, 0, 0, 0.4156862745);
   border-radius: 5px;
+  max-width: 90%;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
   section.formateo_1 div p {
     display: none;
   }
@@ -1087,10 +1137,15 @@ section.formateo_1 div a {
   padding: 15px;
   border-radius: 5px;
 }
+@media screen and (max-width: 800px) {
+  section.formateo_1 div a {
+    font-size: 25px;
+    padding: 20px;
+  }
+}
 @media screen and (max-width: 500px) {
   section.formateo_1 div a {
-    padding: 20px;
-    border-radius: 10px;
+    font-size: 15px;
   }
 }
 section.formateo_1 div a:hover {
@@ -1100,13 +1155,17 @@ section.formateo_1 div a:hover {
 
 section.formateo_2 {
   font-family: "montserrat", sans-serif;
-  padding-inline: 30px;
-  padding-top: 5px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+@media screen and (max-width: 800px) {
+  section.formateo_2 {
+    height: 650px;
+  }
 }
 @media screen and (max-width: 500px) {
   section.formateo_2 {
-    padding-inline: 10px;
-    padding-top: 10px;
+    height: 1050px;
   }
 }
 section.formateo_2 div.container {
@@ -1118,6 +1177,13 @@ section.formateo_2 div.container {
   border: solid 1.5px #2f8cf0;
   text-align: center;
 }
+@media screen and (max-width: 800px) {
+  section.formateo_2 div.container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 600px;
+  }
+}
 @media screen and (max-width: 500px) {
   section.formateo_2 div.container {
     display: flex;
@@ -1125,7 +1191,7 @@ section.formateo_2 div.container {
     height: 1000px;
     justify-content: space-around;
     align-items: center;
-    border: solid 1.5px black;
+    border: none;
   }
 }
 section.formateo_2 div.container div {
@@ -1147,61 +1213,90 @@ section.formateo_2 div.container div h2 {
 }
 section.formateo_2 div.container div p {
   text-align: center;
-  min-width: 300px;
-  max-width: 300px;
+  min-width: 90%;
+  max-width: 90%;
 }
-section.formateo_2 h1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100px;
+@media screen and (max-width: 800px) {
+  section.formateo_2 div.container div p {
+    font-size: 19px;
+  }
+}
+@media screen and (max-width: 500px) {
+  section.formateo_2 div.container div p {
+    font-size: 17px;
+  }
 }
 
 section.formateo_3 {
   font-family: "montserrat", sans-serif;
   background-color: #2f8cf0;
-  height: 450px;
+  height: 530px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
+@media screen and (max-width: 800px) {
+  section.formateo_3 {
+    height: 460px;
+  }
+}
 @media screen and (max-width: 500px) {
   section.formateo_3 {
-    background-color: white;
+    height: 550px;
   }
 }
 section.formateo_3 div {
   background-color: white;
-  padding: 70px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 450px;
+  width: 50%;
+}
+@media screen and (max-width: 1440px) {
+  section.formateo_3 div {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 800px) {
+  section.formateo_3 div {
+    width: 90%;
+    height: 400px;
+  }
 }
 @media screen and (max-width: 500px) {
   section.formateo_3 div {
-    padding: 0;
+    background-color: #2f8cf0;
+    height: 550px;
   }
+}
+section.formateo_3 div h1 {
+  font-size: 30px;
 }
 @media screen and (max-width: 500px) {
   section.formateo_3 div h1 {
     font-size: 20px;
     font-weight: 600;
+    color: white;
   }
 }
 section.formateo_3 div p {
-  min-width: 100px;
-  max-width: 600px;
+  min-width: 85%;
+  max-width: 85%;
   text-align: center;
   padding-top: 10px;
   font-weight: 500;
+  font-size: 16px;
 }
 @media screen and (max-width: 500px) {
   section.formateo_3 div p {
-    max-width: 350px;
-    min-width: 350px;
+    color: white;
+    font-size: 15px;
+    min-width: 95%;
+    max-width: 95%;
   }
 }
 
@@ -1209,40 +1304,80 @@ section.empresas_1 {
   font-family: "montserrat", sans-serif;
   height: 400px;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: solid 2px #2f8cf0;
-  margin: 10px;
-  margin-inline: 100px;
-  border-radius: 5px;
+  text-align: center;
+  background-color: #232222;
+}
+@media screen and (max-width: 800px) {
+  section.empresas_1 {
+    background-color: #2f8cf0;
+  }
 }
 @media screen and (max-width: 500px) {
   section.empresas_1 {
-    margin-inline: 5px;
-    height: 350px;
+    background-color: white;
+    height: 250px;
   }
 }
-section.empresas_1 h1 {
-  font-size: 30px;
+section.empresas_1 div {
+  background-color: white;
+  border: solid 1px white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  width: 60%;
+  height: 350px;
+}
+@media screen and (max-width: 1440px) {
+  section.empresas_1 div {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 800px) {
+  section.empresas_1 div {
+    width: 90%;
+  }
 }
 @media screen and (max-width: 500px) {
-  section.empresas_1 h1 {
-    font-size: 25px;
-    color: #2f8cf0;
+  section.empresas_1 div {
+    border: none;
+    gap: 10px;
+    background-color: #2f8cf0;
+    width: 100%;
+    height: 250px;
   }
 }
-section.empresas_1 p {
+section.empresas_1 div h1 {
+  font-size: 30px;
+  text-align: center;
+  color: #2f8cf0;
+  max-width: 80%;
+  min-width: 80%;
+}
+@media screen and (max-width: 500px) {
+  section.empresas_1 div h1 {
+    font-size: 25px;
+    color: white;
+  }
+}
+section.empresas_1 div p {
   padding-top: 20px;
   padding-bottom: 30px;
   font-weight: 500;
   font-size: 16px;
-  max-width: 800px;
-  min-width: 100px;
+  max-width: 80%;
+  min-width: 80%;
   text-align: center;
 }
-section.empresas_1 a {
+@media screen and (max-width: 500px) {
+  section.empresas_1 div p {
+    display: none;
+  }
+}
+section.empresas_1 div a {
   text-decoration: none;
   background-color: #2f8cf0;
   color: white;
@@ -1251,12 +1386,14 @@ section.empresas_1 a {
   border-radius: 3px;
 }
 @media screen and (max-width: 500px) {
-  section.empresas_1 a {
+  section.empresas_1 div a {
     padding-top: 20px;
     padding-bottom: 20px;
+    background-color: #232222;
+    color: white;
   }
 }
-section.empresas_1 a:hover {
+section.empresas_1 div a:hover {
   color: black;
   transition: ease 0.6s;
 }
@@ -1268,17 +1405,25 @@ section.empresas_2 {
   background-size: cover;
   background-position: center center;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   padding-top: 40px;
   padding-bottom: 40px;
   gap: 70px;
+  width: 100%;
+}
+@media screen and (max-width: 800px) {
+  section.empresas_2 {
+    gap: 10px;
+    padding-inline: 3%;
+  }
 }
 @media screen and (max-width: 500px) {
   section.empresas_2 {
-    gap: 0;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    gap: 20px;
     flex-direction: column;
-    background-image: none;
   }
 }
 section.empresas_2 div {
@@ -1291,6 +1436,12 @@ section.empresas_2 div {
   justify-content: space-evenly;
   align-items: center;
   border-radius: 3px;
+}
+@media screen and (max-width: 500px) {
+  section.empresas_2 div {
+    width: 100%;
+    border: solid 2px #232222;
+  }
 }
 section.empresas_2 div li {
   list-style: square;
@@ -1331,6 +1482,22 @@ section.empresas_3 {
   padding-top: 30px;
   background-color: #2f8cf0;
 }
+@media screen and (max-width: 800px) {
+  section.empresas_3 {
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-inline: 0;
+  }
+}
+@media screen and (max-width: 500px) {
+  section.empresas_3 {
+    background-color: #2f8cf0;
+    width: 100%;
+    padding-inline: 0;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+}
 section.empresas_3 div.container {
   display: grid;
   height: 500px;
@@ -1340,6 +1507,24 @@ section.empresas_3 div.container {
   background-color: white;
   border: solid 2px black;
 }
+@media screen and (max-width: 800px) {
+  section.empresas_3 div.container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 650px;
+  }
+}
+@media screen and (max-width: 500px) {
+  section.empresas_3 div.container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+    height: 900px;
+  }
+}
 section.empresas_3 div.container div {
   display: flex;
   flex-direction: column;
@@ -1347,14 +1532,28 @@ section.empresas_3 div.container div {
   align-items: center;
 }
 section.empresas_3 div.container div h2 {
+  text-align: center;
   color: #2f8cf0;
   padding-bottom: 10px;
   font-size: 30px;
+  min-width: 95%;
+  max-width: 95%;
 }
 section.empresas_3 div.container div p {
   text-align: center;
-  min-width: 60px;
-  max-width: 400px;
+  font-size: 16px;
+  min-width: 95%;
+  max-width: 95%;
+}
+@media screen and (max-width: 800px) {
+  section.empresas_3 div.container div p {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 500px) {
+  section.empresas_3 div.container div p {
+    font-size: 16px;
+  }
 }
 
 section.empresas_4 {
@@ -1362,7 +1561,17 @@ section.empresas_4 {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  height: 400px;
+  height: 300px;
+}
+@media screen and (max-width: 800px) {
+  section.empresas_4 {
+    display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  section.empresas_4 {
+    display: none;
+  }
 }
 section.empresas_4 div {
   width: 500px;
