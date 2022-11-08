@@ -1,13 +1,29 @@
 section.contrato_1 {
     font-family: "montserrat", sans-serif;
-    background-image: url("https://soportepc.com.ar/images/banner.jpg");
+    background:linear-gradient( rgba(0, 0, 0, 0.414) 100%, rgba(0, 0, 0, 0.298)100%),url("https://soportepc.com.ar/images/banner.jpg");
     height: 500px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 
+    @include tablet {
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
     @include phone {
         height: 250px;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
     }
 
     div {
@@ -21,7 +37,19 @@ section.contrato_1 {
         margin-left: 240px;
         color: white;
         text-align: start;
-        gap: 15px;
+        gap: 5px;
+
+        @include tablet {
+            flex: 1;
+            margin-left: 0px;
+            margin-right: 0px;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            width: 100%;
+            gap: 0px;
+            height: 250px;
+        }
 
         @include phone {
             flex: 1;
@@ -38,8 +66,13 @@ section.contrato_1 {
         p {
             padding: 10px;
             font-size: 20px;
-            background-color: #0000009a;
-            border-radius: 5px;
+            background-color: #0000006a;
+            border-radius: 10px;
+
+            @include tablet {
+                color: $maincolor;
+                padding: 3px;
+            }
 
             @include phone {
                 display: none;
@@ -50,12 +83,18 @@ section.contrato_1 {
             padding: 10px;
             font-size: 37px;
             color: $maincolor;
-            background-color: #0000009a;
-            border-radius: 5px;
+            background-color: #0000006a;
+            border-radius: 10px;
+
+            @include tablet {
+                color: white;
+                padding: 3px;
+            }
 
             @include phone {
-                background-color: #0000009a;
-                border-radius: 0;
+                color: white;
+                background-color: #00000053;
+                border-radius: 10px;
                 font-size: 30px;
                 padding: 5px;
             }
@@ -65,7 +104,7 @@ section.contrato_1 {
             background-color: $maincolor;
             text-decoration: none;
             color: white;
-            padding: 15px;
+            padding: 20px;
             border-radius: 5px;
 
             @include phone {
@@ -84,8 +123,15 @@ section.contrato_1 {
 
 section.contrato_2 {
     font-family: "montserrat", sans-serif;
-    padding-inline: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex: 1;
+    width: 100%;
 
+    
     h1 {
         text-align: center;
         margin: auto;
@@ -96,19 +142,27 @@ section.contrato_2 {
         height: 500px;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        margin: auto;
         border: solid 1.5px $maincolor;
+        gap: 20px;
+        text-align: center;
+
+        @include tablet {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+        }
 
         @include phone {
             display: flex;
             flex-direction: column;
             flex: 1;
-            justify-content: space-around;
+            justify-content: space-between;
             align-items: center;
             width: auto;
             padding: 0;
             height: 900px;
-            border: solid 1.5px black;
+            border: none;
+            gap: 10px;
+            width: 100%;
         }
 
         div {
@@ -116,11 +170,17 @@ section.contrato_2 {
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            text-align: center;
+
+            @include phone {
+                width: 100%;
+            }
 
             h2 {
                 color: $maincolor;
                 padding-bottom: 10px;
                 font-size: 30px;
+                text-align: center;
 
                 @include phone {
                     font-size: 22px;
@@ -130,10 +190,9 @@ section.contrato_2 {
             p {
                 text-align: center;
                 min-width: 400px;
-                max-width: 500px;
+                max-width: 95%;
 
                 @include phone {
-                    max-width: 300px;
                     min-width: 300px;
                 }
             }

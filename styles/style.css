@@ -493,7 +493,7 @@ section.index_2 div h1 {
 }
 @media screen and (max-width: 500px) {
   section.index_2 div h1 {
-    font-size: 25px;
+    font-size: 20px;
     text-align: center;
   }
 }
@@ -504,7 +504,7 @@ section.index_2 div p {
 }
 @media screen and (max-width: 500px) {
   section.index_2 div p {
-    font-size: 15px;
+    font-size: 13px;
   }
 }
 
@@ -777,15 +777,32 @@ section.index_4 div.forma a:hover {
 
 section.contrato_1 {
   font-family: "montserrat", sans-serif;
-  background-image: url("https://soportepc.com.ar/images/banner.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.414) 100%, rgba(0, 0, 0, 0.298) 100%), url("https://soportepc.com.ar/images/banner.jpg");
   height: 500px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
+@media screen and (max-width: 1025px) {
+  section.contrato_1 {
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+}
 @media screen and (max-width: 500px) {
   section.contrato_1 {
     height: 250px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
   }
 }
 section.contrato_1 div {
@@ -799,7 +816,20 @@ section.contrato_1 div {
   margin-left: 240px;
   color: white;
   text-align: start;
-  gap: 15px;
+  gap: 5px;
+}
+@media screen and (max-width: 1025px) {
+  section.contrato_1 div {
+    flex: 1;
+    margin-left: 0px;
+    margin-right: 0px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    gap: 0px;
+    height: 250px;
+  }
 }
 @media screen and (max-width: 500px) {
   section.contrato_1 div {
@@ -817,8 +847,14 @@ section.contrato_1 div {
 section.contrato_1 div p {
   padding: 10px;
   font-size: 20px;
-  background-color: rgba(0, 0, 0, 0.6039215686);
-  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.4156862745);
+  border-radius: 10px;
+}
+@media screen and (max-width: 1025px) {
+  section.contrato_1 div p {
+    color: #2f8cf0;
+    padding: 3px;
+  }
 }
 @media screen and (max-width: 500px) {
   section.contrato_1 div p {
@@ -829,13 +865,20 @@ section.contrato_1 div h1 {
   padding: 10px;
   font-size: 37px;
   color: #2f8cf0;
-  background-color: rgba(0, 0, 0, 0.6039215686);
-  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.4156862745);
+  border-radius: 10px;
+}
+@media screen and (max-width: 1025px) {
+  section.contrato_1 div h1 {
+    color: white;
+    padding: 3px;
+  }
 }
 @media screen and (max-width: 500px) {
   section.contrato_1 div h1 {
-    background-color: rgba(0, 0, 0, 0.6039215686);
-    border-radius: 0;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3254901961);
+    border-radius: 10px;
     font-size: 30px;
     padding: 5px;
   }
@@ -844,7 +887,7 @@ section.contrato_1 div a {
   background-color: #2f8cf0;
   text-decoration: none;
   color: white;
-  padding: 15px;
+  padding: 20px;
   border-radius: 5px;
 }
 @media screen and (max-width: 500px) {
@@ -859,7 +902,13 @@ section.contrato_1 div a:hover {
 
 section.contrato_2 {
   font-family: "montserrat", sans-serif;
-  padding-inline: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex: 1;
+  width: 100%;
 }
 section.contrato_2 h1 {
   text-align: center;
@@ -870,20 +919,29 @@ section.contrato_2 div.container {
   height: 500px;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  margin: auto;
   border: solid 1.5px #2f8cf0;
+  gap: 20px;
+  text-align: center;
+}
+@media screen and (max-width: 1025px) {
+  section.contrato_2 div.container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
 }
 @media screen and (max-width: 500px) {
   section.contrato_2 div.container {
     display: flex;
     flex-direction: column;
     flex: 1;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     width: auto;
     padding: 0;
     height: 900px;
-    border: solid 1.5px black;
+    border: none;
+    gap: 10px;
+    width: 100%;
   }
 }
 section.contrato_2 div.container div {
@@ -891,11 +949,18 @@ section.contrato_2 div.container div {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
+}
+@media screen and (max-width: 500px) {
+  section.contrato_2 div.container div {
+    width: 100%;
+  }
 }
 section.contrato_2 div.container div h2 {
   color: #2f8cf0;
   padding-bottom: 10px;
   font-size: 30px;
+  text-align: center;
 }
 @media screen and (max-width: 500px) {
   section.contrato_2 div.container div h2 {
@@ -905,11 +970,10 @@ section.contrato_2 div.container div h2 {
 section.contrato_2 div.container div p {
   text-align: center;
   min-width: 400px;
-  max-width: 500px;
+  max-width: 95%;
 }
 @media screen and (max-width: 500px) {
   section.contrato_2 div.container div p {
-    max-width: 300px;
     min-width: 300px;
   }
 }

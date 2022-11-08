@@ -250,7 +250,7 @@ section.index_2 {
             color: $maincolor;
 
             @include phone {
-                font-size: 25px;
+                font-size: 20px;
                 text-align: center;
             }
         }
@@ -261,7 +261,7 @@ section.index_2 {
             text-align: center;
 
             @include phone {
-                font-size: 15px;
+                font-size: 13px;
             }
         }
     }
