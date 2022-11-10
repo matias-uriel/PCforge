@@ -9,6 +9,7 @@ section.footer_1 {
     color: white;
     font-family: "montserrat", sans-serif;
     height: 170px;
+    padding-inline: 3%;
 
     @include phone {
         flex-direction: column;
@@ -28,6 +29,8 @@ section.footer_1 {
 
     p {
         padding-left: 3px;
+        max-width: 90%;
+        min-width: 90%;
     }
 
     ul {
@@ -68,6 +71,7 @@ section.footer_2 {
     color: white;
     padding-top: 50px;
     padding-bottom: 30px;
+    padding-inline: 5%;
 
     @include phone {
         padding-top: 15px;

@@ -1,0 +1,253 @@
+section.contacto1 {
+    font-family: "montserrat", sans-serif;
+    height: 700px;
+    display: flex;
+
+    div.urge {
+        background: linear-gradient(rgba(0, 0, 0, 0.465) 100%, rgba(0, 0, 0, 0.298)100%), url("https://img.freepik.com/foto-gratis/personas-que-trabajan-centro-llamadas_23-2149288184.jpg?w=2000");
+        background-position: center top;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 50%;
+        color: white;
+
+
+        h2 {
+            background-color: rgba(0, 0, 0, 0.61);
+            padding: 5px;
+            border-radius: 5px;
+            font-size: 17px;
+        }
+
+        h1 {
+            opacity: 1;
+            transition: ease 0.3s;
+        }
+
+        h2 {
+            opacity: 1;
+            transition: ease 0.3s;
+        }
+
+        section {
+            opacity: 0;
+            transition: ease 0.3s;
+            text-align: center;
+            position: absolute;
+
+            h3 {
+                font-size: 30px;
+                padding-bottom: 10px;
+            }
+
+            div {
+                font-size: 17px;
+            }
+        }
+    }
+
+    div.urge:hover {
+        background: linear-gradient(rgba(0, 0, 0, 0.64) 100%, rgba(0, 0, 0, 0.298)100%), url("https://img.freepik.com/foto-gratis/personas-que-trabajan-centro-llamadas_23-2149288184.jpg?w=2000");
+        transition: ease 0.3s;
+        background-position: center top;
+        background-size: cover;
+
+        h1 {
+            opacity: 0;
+            transition: ease 0.3s;
+        }
+
+        h2 {
+            opacity: 0;
+            transition: ease 0.3s;
+        }
+
+        section {
+            opacity: 1;
+            transition: ease 0.3s;
+        }
+    }
+
+    div.formu {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        max-width: 40%;
+        min-width: 30%;
+
+        input.boton {
+            font-family: "montserrat", sans-serif;
+            font-weight: 500;
+            color: white;
+            background-color: $backcolor1;
+            border: none;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 3px;
+        }
+
+        input.boton:hover {
+            color: $maincolor;
+            background-color: rgba(0, 0, 0, 0.803);
+        }
+
+        p {
+            font-size: 17px;
+        }
+
+        form {
+
+            section.datos {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 3px;
+
+                    label {
+                        font-weight: 500;
+                    }
+
+                    input {
+                        width: 90%;
+                        border-radius: 3px;
+                        border: solid 1px $maincolor;
+                    }
+                }
+            }
+
+            div.problem {
+                display: flex;
+                flex-direction: column;
+                gap: 3px;
+
+                label {
+                    font-weight: 500;
+                }
+
+                textarea {
+                    resize: none;
+                    border-radius: 3px;
+                    border: solid 1px $maincolor;
+                }
+            }
+        }
+    }
+}
+
+section.contacto2 {
+    font-family: "montserrat", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 750px;
+
+    section {
+        background: linear-gradient(rgba(0, 0, 0, 0.465) 100%, rgba(0, 0, 0, 0.298)100%), url("https://www.elcampico.org/wp-content/uploads/2019/04/TALLER-INFORMA%CC%81TICA.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        display: flex;
+        flex: 1;
+        width: 100%;
+        align-items: center;
+        height: 100%;
+
+        div.map {
+            margin-left: 5%;
+
+            iframe {
+                border: solid 10px black;
+            }
+        }
+
+        div.info {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            gap: 40px;
+
+            div {
+                color: white;
+                display: flex;
+                flex-direction: column;
+                text-align: end;
+                background-color: $backcolor1;
+                padding: 20px;
+                margin-right: 40%;
+            }
+
+            div:hover {
+                @include pc {
+                    background-color: $maincolor;
+                    transition: ease 0.4s;
+
+                    h2 {
+                        color:black;
+                        transition: ease 0.3s;
+                    }
+                }
+
+                @include note {
+                    background-color: $maincolor;
+                    transition: ease 0.4s;
+
+                    h2 {
+                        color:black;
+                        transition: ease 0.3s;
+                    }
+                }
+            }
+        }
+    }
+}
+
+section.contacto3 {
+    font-family: "montserrat", sans-serif;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    height: 60px;
+
+    p.uno {
+        height: 60px;
+        color: white;
+        background-color: #0f7cf1;
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+        font-weight: 600;
+    }
+
+    p.dos {
+        height: 60px;
+        color: white;
+        background-color: #2176d0;
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+        font-weight: 600;
+    }
+
+    p.tres {
+        color: white;
+        height: 60px;
+        background-color: #2464a9;
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+        font-weight: 600;
+    }
+}
