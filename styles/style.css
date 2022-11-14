@@ -1666,6 +1666,19 @@ section.contacto1 {
   height: 700px;
   display: flex;
 }
+@media screen and (max-width: 800px) {
+  section.contacto1 {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 1200px;
+  }
+}
+@media screen and (max-width: 500px) {
+  section.contacto1 {
+    height: 1100px;
+  }
+}
 section.contacto1 div.urge {
   background: linear-gradient(rgba(0, 0, 0, 0.465) 100%, rgba(0, 0, 0, 0.298) 100%), url("https://img.freepik.com/foto-gratis/personas-que-trabajan-centro-llamadas_23-2149288184.jpg?w=2000");
   background-position: center top;
@@ -1677,6 +1690,11 @@ section.contacto1 div.urge {
   height: 100%;
   width: 50%;
   color: white;
+}
+@media screen and (max-width: 800px) {
+  section.contacto1 div.urge {
+    width: 100%;
+  }
 }
 section.contacto1 div.urge h2 {
   background-color: rgba(0, 0, 0, 0.61);
@@ -1730,6 +1748,15 @@ section.contacto1 div.formu {
   max-width: 40%;
   min-width: 30%;
 }
+@media screen and (max-width: 800px) {
+  section.contacto1 div.formu {
+    margin: 0;
+    max-width: 95%;
+    min-width: 95%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+  }
+}
 section.contacto1 div.formu input.boton {
   font-family: "montserrat", sans-serif;
   font-weight: 500;
@@ -1740,12 +1767,29 @@ section.contacto1 div.formu input.boton {
   margin-top: 10px;
   border-radius: 3px;
 }
+@media screen and (max-width: 800px) {
+  section.contacto1 div.formu input.boton {
+    width: 99%;
+    padding: 15px;
+    font-size: 20px;
+  }
+}
 section.contacto1 div.formu input.boton:hover {
   color: #2f8cf0;
   background-color: rgba(0, 0, 0, 0.803);
 }
 section.contacto1 div.formu p {
   font-size: 17px;
+}
+@media screen and (max-width: 800px) {
+  section.contacto1 div.formu p {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 500px) {
+  section.contacto1 div.formu p {
+    display: none;
+  }
 }
 section.contacto1 div.formu form section.datos {
   display: grid;
@@ -1760,10 +1804,21 @@ section.contacto1 div.formu form section.datos div {
 section.contacto1 div.formu form section.datos div label {
   font-weight: 500;
 }
+@media screen and (max-width: 800px) {
+  section.contacto1 div.formu form section.datos div label {
+    font-size: 20px;
+  }
+}
 section.contacto1 div.formu form section.datos div input {
   width: 90%;
   border-radius: 3px;
   border: solid 1px #2f8cf0;
+}
+@media screen and (max-width: 800px) {
+  section.contacto1 div.formu form section.datos div input {
+    width: 98%;
+    font-size: 20px;
+  }
 }
 section.contacto1 div.formu form div.problem {
   display: flex;
@@ -1773,10 +1828,27 @@ section.contacto1 div.formu form div.problem {
 section.contacto1 div.formu form div.problem label {
   font-weight: 500;
 }
+@media screen and (max-width: 800px) {
+  section.contacto1 div.formu form div.problem label {
+    font-size: 20px;
+  }
+}
 section.contacto1 div.formu form div.problem textarea {
+  width: 95%;
   resize: none;
   border-radius: 3px;
   border: solid 1px #2f8cf0;
+}
+@media screen and (max-width: 800px) {
+  section.contacto1 div.formu form div.problem textarea {
+    font-size: 20px;
+    width: 99%;
+  }
+}
+@media screen and (max-width: 500px) {
+  section.contacto1 div.formu form div.problem textarea {
+    height: 300px;
+  }
 }
 
 section.contacto2 {
@@ -1784,8 +1856,17 @@ section.contacto2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   height: 750px;
+}
+@media screen and (max-width: 800px) {
+  section.contacto2 {
+    height: 900px;
+  }
+}
+@media screen and (max-width: 500px) {
+  section.contacto2 {
+    height: 450px;
+  }
 }
 section.contacto2 section {
   background: linear-gradient(rgba(0, 0, 0, 0.465) 100%, rgba(0, 0, 0, 0.298) 100%), url("https://www.elcampico.org/wp-content/uploads/2019/04/TALLER-INFORMA%CC%81TICA.jpg");
@@ -1798,8 +1879,26 @@ section.contacto2 section {
   align-items: center;
   height: 100%;
 }
+@media screen and (max-width: 800px) {
+  section.contacto2 section {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
 section.contacto2 section div.map {
   margin-left: 5%;
+}
+@media screen and (max-width: 800px) {
+  section.contacto2 section div.map {
+    padding-top: 15px;
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 500px) {
+  section.contacto2 section div.map {
+    display: none;
+  }
 }
 section.contacto2 section div.map iframe {
   border: solid 10px black;
@@ -1810,6 +1909,21 @@ section.contacto2 section div.info {
   flex: 1;
   gap: 40px;
 }
+@media screen and (max-width: 800px) {
+  section.contacto2 section div.info {
+    width: 90%;
+    flex: 0;
+    flex-direction: row;
+    gap: 5px;
+  }
+}
+@media screen and (max-width: 500px) {
+  section.contacto2 section div.info {
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+}
 section.contacto2 section div.info div {
   color: white;
   display: flex;
@@ -1819,22 +1933,38 @@ section.contacto2 section div.info div {
   padding: 20px;
   margin-right: 40%;
 }
+@media screen and (max-width: 800px) {
+  section.contacto2 section div.info div {
+    width: 95%;
+    margin-right: 5px;
+    padding: 5px;
+    text-align: center;
+  }
+  section.contacto2 section div.info div p {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 500px) {
+  section.contacto2 section div.info div {
+    width: 100%;
+  }
+}
 @media screen and (min-width: 1440px) {
-  section.contacto2 section div.info div:hover {
+  section.contacto2 section div.info div div:hover {
     background-color: #2f8cf0;
     transition: ease 0.4s;
   }
-  section.contacto2 section div.info div:hover h2 {
+  section.contacto2 section div.info div div:hover h2 {
     color: black;
     transition: ease 0.3s;
   }
 }
 @media screen and (max-width: 1440px) {
-  section.contacto2 section div.info div:hover {
+  section.contacto2 section div.info div div:hover {
     background-color: #2f8cf0;
     transition: ease 0.4s;
   }
-  section.contacto2 section div.info div:hover h2 {
+  section.contacto2 section div.info div div:hover h2 {
     color: black;
     transition: ease 0.3s;
   }

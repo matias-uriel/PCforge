@@ -3,6 +3,17 @@ section.contacto1 {
     height: 700px;
     display: flex;
 
+    @include tablet {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 1200px;
+    }
+
+    @include phone {
+        height: 1100px;
+    }
+
     div.urge {
         background: linear-gradient(rgba(0, 0, 0, 0.465) 100%, rgba(0, 0, 0, 0.298)100%), url("https://img.freepik.com/foto-gratis/personas-que-trabajan-centro-llamadas_23-2149288184.jpg?w=2000");
         background-position: center top;
@@ -14,6 +25,10 @@ section.contacto1 {
         height: 100%;
         width: 50%;
         color: white;
+
+        @include tablet {
+            width: 100%;
+        }
 
 
         h2 {
@@ -79,6 +94,14 @@ section.contacto1 {
         max-width: 40%;
         min-width: 30%;
 
+        @include tablet {
+            margin: 0;
+            max-width: 95%;
+            min-width: 95%;
+            padding-top: 4%;
+            padding-bottom: 4%;
+        }
+
         input.boton {
             font-family: "montserrat", sans-serif;
             font-weight: 500;
@@ -88,6 +111,12 @@ section.contacto1 {
             padding: 10px;
             margin-top: 10px;
             border-radius: 3px;
+
+            @include tablet {
+                width: 99%;
+                padding: 15px;
+                font-size: 20px;
+            }
         }
 
         input.boton:hover {
@@ -97,6 +126,14 @@ section.contacto1 {
 
         p {
             font-size: 17px;
+
+            @include tablet {
+                font-size: 20px;
+            }
+
+            @include phone {
+                display: none;
+            }
         }
 
         form {
@@ -113,12 +150,21 @@ section.contacto1 {
 
                     label {
                         font-weight: 500;
+
+                        @include tablet {
+                            font-size: 20px;
+                        }
                     }
 
                     input {
                         width: 90%;
                         border-radius: 3px;
                         border: solid 1px $maincolor;
+
+                        @include tablet {
+                            width: 98%;
+                            font-size: 20px;
+                        }
                     }
                 }
             }
@@ -130,12 +176,26 @@ section.contacto1 {
 
                 label {
                     font-weight: 500;
+
+                    @include tablet {
+                        font-size: 20px;
+                    }
                 }
 
                 textarea {
+                    width: 95%;
                     resize: none;
                     border-radius: 3px;
                     border: solid 1px $maincolor;
+
+                    @include tablet {
+                        font-size: 20px;
+                        width: 99%;
+                    }
+
+                    @include phone {
+                        height: 300px;
+                    }
                 }
             }
         }
@@ -147,8 +207,15 @@ section.contacto2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     height: 750px;
+
+    @include tablet {
+        height: 900px;
+    }
+
+    @include phone {
+        height: 450px;
+    }
 
     section {
         background: linear-gradient(rgba(0, 0, 0, 0.465) 100%, rgba(0, 0, 0, 0.298)100%), url("https://www.elcampico.org/wp-content/uploads/2019/04/TALLER-INFORMA%CC%81TICA.jpg");
@@ -161,8 +228,23 @@ section.contacto2 {
         align-items: center;
         height: 100%;
 
+        @include tablet {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
         div.map {
             margin-left: 5%;
+
+            @include tablet {
+                padding-top: 15px;
+                margin-left: 0;
+            }
+
+            @include phone {
+                display: none;
+            }
 
             iframe {
                 border: solid 10px black;
@@ -175,6 +257,19 @@ section.contacto2 {
             flex: 1;
             gap: 40px;
 
+            @include tablet {
+                width: 90%;
+                flex: 0;
+                flex-direction: row;
+                gap: 5px;
+            }
+
+            @include phone {
+                flex-direction: column;
+                gap: 20px;
+                width: 100%;
+            }
+
             div {
                 color: white;
                 display: flex;
@@ -183,26 +278,41 @@ section.contacto2 {
                 background-color: $backcolor1;
                 padding: 20px;
                 margin-right: 40%;
-            }
 
-            div:hover {
-                @include pc {
-                    background-color: $maincolor;
-                    transition: ease 0.4s;
+                @include tablet {
+                    width: 95%;
+                    margin-right: 5px;
+                    padding: 5px;
+                    text-align: center;
 
-                    h2 {
-                        color:black;
-                        transition: ease 0.3s;
+                    p {
+                        font-size: 18px;
                     }
                 }
 
-                @include note {
-                    background-color: $maincolor;
-                    transition: ease 0.4s;
+                @include phone {
+                    width: 100%;
+                }
 
-                    h2 {
-                        color:black;
-                        transition: ease 0.3s;
+                div:hover {
+                    @include pc {
+                        background-color: $maincolor;
+                        transition: ease 0.4s;
+
+                        h2 {
+                            color: black;
+                            transition: ease 0.3s;
+                        }
+                    }
+
+                    @include note {
+                        background-color: $maincolor;
+                        transition: ease 0.4s;
+
+                        h2 {
+                            color: black;
+                            transition: ease 0.3s;
+                        }
                     }
                 }
             }
