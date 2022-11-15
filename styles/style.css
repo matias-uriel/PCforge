@@ -1950,21 +1950,21 @@ section.contacto2 section div.info div {
   }
 }
 @media screen and (min-width: 1440px) {
-  section.contacto2 section div.info div div:hover {
+  section.contacto2 section div.info div:hover {
     background-color: #2f8cf0;
     transition: ease 0.4s;
   }
-  section.contacto2 section div.info div div:hover h2 {
+  section.contacto2 section div.info div:hover h2 {
     color: black;
     transition: ease 0.3s;
   }
 }
 @media screen and (max-width: 1440px) {
-  section.contacto2 section div.info div div:hover {
+  section.contacto2 section div.info div:hover {
     background-color: #2f8cf0;
     transition: ease 0.4s;
   }
-  section.contacto2 section div.info div div:hover h2 {
+  section.contacto2 section div.info div:hover h2 {
     color: black;
     transition: ease 0.3s;
   }

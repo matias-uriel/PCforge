@@ -293,26 +293,26 @@ section.contacto2 {
                 @include phone {
                     width: 100%;
                 }
+            }
 
-                div:hover {
-                    @include pc {
-                        background-color: $maincolor;
-                        transition: ease 0.4s;
+            div:hover {
+                @include pc {
+                    background-color: $maincolor;
+                    transition: ease 0.4s;
 
-                        h2 {
-                            color: black;
-                            transition: ease 0.3s;
-                        }
+                    h2 {
+                        color: black;
+                        transition: ease 0.3s;
                     }
+                }
 
-                    @include note {
-                        background-color: $maincolor;
-                        transition: ease 0.4s;
+                @include note {
+                    background-color: $maincolor;
+                    transition: ease 0.4s;
 
-                        h2 {
-                            color: black;
-                            transition: ease 0.3s;
-                        }
+                    h2 {
+                        color: black;
+                        transition: ease 0.3s;
                     }
                 }
             }
